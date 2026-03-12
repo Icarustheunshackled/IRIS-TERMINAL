@@ -5,32 +5,35 @@ let loggedIn = false;
 
 let sealIntegrity = 92;
 
-function print(text){
+const wait = () => new Promise(res => setTimeout(res, 500));
+
+async function print(text) {
     output.innerHTML += text + "<br>";
-    window.scrollTo(0,document.body.scrollHeight);
+    window.scrollTo(0, document.body.scrollHeight);
+    await wait(); // This adds the .5s delay automatically
 }
 
-function boot(){
+async function boot(){
 
-print("BOOTING IRIS SYSTEM...");
-print("LOADING SECURITY MODULE...");
-print("LOADING ████ MONITORING...");
-print("LOADING ███████ CONTAINMENT...");
-print("");
-print("WARNING: UNKNOWN PROCESS DETECTED");
-print("");
-print("SYSTEM INTEGRITY: 58%");
-print("MAINTENANCE HAS BEEN NOTIFIED")
-print("");
-print("IRIS SECURITY INTERFACE v2.3");
-print("Tapio Land Monitoring System");
-print("");
-print("STATUS: ONLINE");
-print("████ INTEGRITY: "+sealIntegrity+"%");
-print("ANOMALY DETECTED");
-print("");
-print("Type 'help' for commands.");
-print("");
+await print("BOOTING IRIS SYSTEM...");
+await print("LOADING SECURITY MODULE...");
+await print("LOADING ████ MONITORING...");
+await print("LOADING ███████ CONTAINMENT...");
+await print("");
+await print("WARNING: UNKNOWN PROCESS DETECTED");
+await print("");
+await print("SYSTEM INTEGRITY: 58%");
+await print("MAINTENANCE HAS BEEN NOTIFIED")
+await print("");
+await print("IRIS SECURITY INTERFACE v2.3");
+await print("Tapio Land Monitoring System");
+await print("");
+await print("STATUS: ONLINE");
+await print("████ INTEGRITY: "+sealIntegrity+"%");
+await print("ANOMALY DETECTED");
+await print("");
+await print("Type 'help' for commands.");
+await print("");
 
 }
 
@@ -49,19 +52,19 @@ input.value="";
 
 });
 
-function runCommand(cmd){
+async function runCommand(cmd){
 
 if(cmd==="help"){
 
-print("AVAILABLE COMMANDS:");
-print("login");
-print("logs");
-print("nodes");
-print("status");
-print("archive");
-print("shards");
-print("users");
-print("");
+await print("AVAILABLE COMMANDS:");
+await print("login");
+await print("logs");
+await print("nodes");
+await print("status");
+await print("archive");
+await print("shards");
+await print("users");
+await print("");
 
 }
 
@@ -72,13 +75,13 @@ let password=prompt("ENTER ACCESS PASSWORD");
 if(password==="ROOTSINTHESOIL"){
 
 loggedIn=true;
-print("ACCESS GRANTED");
-print("");
+await print("ACCESS GRANTED");
+await print("");
 
 }else{
 
-print("ACCESS DENIED");
-print(" ");
+await print("ACCESS DENIED");
+await print(" ");
 
 }
 
@@ -91,126 +94,126 @@ print("ACCESS RESTRICTED");
 return;
 }
 
-print("LOG 02.11.26");
-print("SYSTEM SCAN COMPLETE");
-print("UNIDENTIFIED PRESENCE DETECTED");
-print("LOCATION: ████████ CHAMBER");
-print("ACTION: MONITOR");
+await print("LOG 02.11.26");
+await print("SYSTEM SCAN COMPLETE");
+await print("UNIDENTIFIED PRESENCE DETECTED");
+await print("LOCATION: ████████ CHAMBER");
+await print("ACTION: MONITOR");
 
-print("");
+await print("");
 
-print("LOG 02.18.26");
-print("██████ ACTIVITY DETECTED");
-print("ATTEMPTING ████████████");
-print("ERROR");
-print("ERROR");
-print("");
+await print("LOG 02.18.26");
+await print("██████ ACTIVITY DETECTED");
+await print("ATTEMPTING ████████████");
+await print("ERROR");
+await print("ERROR");
+await print("");
 
 }
 
 else if(cmd==="status"){
 
-print("████ STATUS");
+await print("████ STATUS");
 
-print("████ 1: STABLE");
-print("████ 2: STABLE");
-print("████ 3: STABLE");
-print("████ 4: DEGRADED");
-print("████ 5: DEGRADED");
-print("████ 6: DEGRADED");
-print("████ 7: DEGRADED");
+await print("████ 1: STABLE");
+await print("████ 2: STABLE");
+await print("████ 3: STABLE");
+await print("████ 4: DEGRADED");
+await print("████ 5: DEGRADED");
+await print("████ 6: DEGRADED");
+await print("████ 7: DEGRADED");
 
-print("TOTAL INTEGRITY: "+sealIntegrity+"%");
-print("");
+await print("TOTAL INTEGRITY: "+sealIntegrity+"%");
+await print("");
 
 }
 
 else if(cmd==="nodes"){
 
-print("TAPIO LAND NODE MAP");
+await print("TAPIO LAND NODE MAP");
 
-print("node441");
-print("node442");
-print("node443");
-print("");
+await print("node441");
+await print("node442");
+await print("node443");
+await print("");
 
 }
 
 else if(cmd==="archive"){
 
-print("ARCHIVE LOCKED");
-print("");
+await print("ARCHIVE LOCKED");
+await print("");
 
 }
 
 else if(cmd==="shards"){
 
-print("SHARD DATABASE");
+await print("SHARD DATABASE");
 
-print("GREEN SHARD");
-print("Classification: ██████ Fragment");
-print("Origin: █████ Reserve");
-print("");
+await print("GREEN SHARD");
+await print("Classification: ██████ Fragment");
+await print("Origin: █████ Reserve");
+await print("");
 
 }
 
 else if(cmd==="users"){
 
-print("PLAYER WATCHLIST");
+await print("PLAYER WATCHLIST");
 
-print("bee_keeper — curious");
-print("███████ — investigating");
-print("");
+await print("bee_keeper — curious");
+await print("███████ — investigating");
+await print("");
 
 }
 
 else if(cmd==="node441"){
 
-print("ACCESSING NODE 441...");
-print("MAINTENANCE CORRIDOR");
-print("12133433311212124421222421111333433131");
+await print("ACCESSING NODE 441...");
+await print("MAINTENANCE CORRIDOR");
+await print("12133433311212124421222421111333433131");
 
-print("");
+await print("");
 
 }
 
 else if(cmd==="node442"){
 
-print("ACCESSING NODE 442...");
-print("MAINTENANCE CORRIDOR KEY");
+await print("ACCESSING NODE 442...");
+await print("MAINTENANCE CORRIDOR KEY");
 
-print("1 = 45:315 0:270");
-print("2 = 90:270 315:225 135:180 225:270 0:315");
-print("3 = 45:225 45:180 90:180 0:315");
-print("4 = 180:0 315:270 90:45 135:225");
-print("");
+await print("1 = 45:315 0:270");
+await print("2 = 90:270 315:225 135:180 225:270 0:315");
+await print("3 = 45:225 45:180 90:180 0:315");
+await print("4 = 180:0 315:270 90:45 135:225");
+await print("");
 
 }
 
 else if(cmd==="node443"){
 
-print("ACCESSING NODE 443...");
-print("KEY REMINDER");
+await print("ACCESSING NODE 443...");
+await print("KEY REMINDER");
     
-print("REMEMBER YOUR PAST, THROUGH EVERY MINUTE, THEN EVERY HOUR. THEN LOOK TO THE FUTURE.");
-print("");
+await print("REMEMBER YOUR PAST, THROUGH EVERY MINUTE, THEN EVERY HOUR. THEN LOOK TO THE FUTURE.");
+await print("");
 
 }
 
 else if(cmd==="node666"){
 
-print("AC ES I G N DE 66 . .");
-print("HELLSCAPE");
+await print("AC ES I G N DE 66 . .");
+await print("HELLSCAPE");
     
-print("SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. PLEASE.");
-print("");
+await print("SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. SAVE US. PLEASE.");
+await print("");
 
 }
 
 else{
 
-print("UNKNOWN COMMAND");
-print("");
+await print("UNKNOWN COMMAND");
+await print("");
     
 }
 
