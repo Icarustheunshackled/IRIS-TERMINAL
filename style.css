@@ -1,0 +1,39 @@
+body {
+
+background:black;
+color:#33ff33;
+font-family:Courier New, monospace;
+margin:0;
+padding:20px;
+
+}
+
+#terminal{
+
+max-width:900px;
+margin:auto;
+
+}
+
+input{
+
+background:black;
+border:none;
+color:#33ff33;
+font-family:Courier New, monospace;
+outline:none;
+width:90%;
+
+}
+
+#input-line{
+
+display:flex;
+
+}
+
+.glitch{
+
+color:#66ff66;
+
+}
