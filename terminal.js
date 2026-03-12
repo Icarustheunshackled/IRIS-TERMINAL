@@ -14,16 +14,19 @@ function boot(){
 
 print("BOOTING IRIS SYSTEM...");
 print("LOADING SECURITY MODULE...");
-print("LOADING SEAL MONITORING...");
-print("LOADING ENTITY CONTAINMENT...");
+print("LOADING ████ MONITORING...");
+print("LOADING ███████ CONTAINMENT...");
 print("");
 print("WARNING: UNKNOWN PROCESS DETECTED");
+print("");
+print("SYSTEM INTEGRITY: 58%");
+print("MAINTENANCE HAS BEEN NOTIFIED")
 print("");
 print("IRIS SECURITY INTERFACE v2.3");
 print("Tapio Land Monitoring System");
 print("");
 print("STATUS: ONLINE");
-print("SEAL INTEGRITY: "+sealIntegrity+"%");
+print("████ INTEGRITY: "+sealIntegrity+"%");
 print("ANOMALY DETECTED");
 print("");
 print("Type 'help' for commands.");
@@ -84,17 +87,17 @@ print("ACCESS RESTRICTED");
 return;
 }
 
-print("LOG 03.11.24");
+print("LOG 02.11.26");
 print("SYSTEM SCAN COMPLETE");
 print("UNIDENTIFIED PRESENCE DETECTED");
-print("LOCATION: RESERVE CHAMBER");
+print("LOCATION: ████████ CHAMBER");
 print("ACTION: MONITOR");
 
 print("");
 
-print("LOG 03.18.24");
-print("ENTITY ACTIVITY DETECTED");
-print("ATTEMPTING CONTAINMENT");
+print("LOG 02.18.26");
+print("██████ ACTIVITY DETECTED");
+print("ATTEMPTING ████████████");
 print("ERROR");
 print("ERROR");
 
@@ -102,12 +105,15 @@ print("ERROR");
 
 else if(cmd==="status"){
 
-print("SEAL STATUS");
+print("████ STATUS");
 
-print("SEAL 1: STABLE");
-print("SEAL 2: STABLE");
-print("SEAL 3: STABLE");
-print("SEAL 4: DEGRADED");
+print("████ 1: STABLE");
+print("████ 2: STABLE");
+print("████ 3: STABLE");
+print("████ 4: DEGRADED");
+print("████ 5: DEGRADED");
+print("████ 6: DEGRADED");
+print("████ 7: DEGRADED");
 
 print("TOTAL INTEGRITY: "+sealIntegrity+"%");
 
