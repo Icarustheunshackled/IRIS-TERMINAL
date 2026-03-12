@@ -30,6 +30,7 @@ print("████ INTEGRITY: "+sealIntegrity+"%");
 print("ANOMALY DETECTED");
 print("");
 print("Type 'help' for commands.");
+print("");
 
 }
 
@@ -60,6 +61,7 @@ print("status");
 print("archive");
 print("shards");
 print("users");
+print("");
 
 }
 
@@ -71,10 +73,12 @@ if(password==="ROOTSINTHESOIL"){
 
 loggedIn=true;
 print("ACCESS GRANTED");
+print("");
 
 }else{
 
 print("ACCESS DENIED");
+print("");
 
 }
 
@@ -100,6 +104,7 @@ print("██████ ACTIVITY DETECTED");
 print("ATTEMPTING ████████████");
 print("ERROR");
 print("ERROR");
+print("");
 
 }
 
@@ -116,6 +121,7 @@ print("████ 6: DEGRADED");
 print("████ 7: DEGRADED");
 
 print("TOTAL INTEGRITY: "+sealIntegrity+"%");
+print("");
 
 }
 
@@ -126,12 +132,14 @@ print("TAPIO LAND NODE MAP");
 print("node441");
 print("node442");
 print("node443");
+print("");
 
 }
 
 else if(cmd==="archive"){
 
 print("ARCHIVE LOCKED");
+print("");
 
 }
 
@@ -140,8 +148,9 @@ else if(cmd==="shards"){
 print("SHARD DATABASE");
 
 print("GREEN SHARD");
-print("Classification: Spatial Fragment");
-print("Origin: Karma Reserve");
+print("Classification: ██████ Fragment");
+print("Origin: █████ Reserve");
+print("");
 
 }
 
@@ -151,6 +160,7 @@ print("PLAYER WATCHLIST");
 
 print("bee_keeper — curious");
 print("███████ — investigating");
+print("");
 
 }
 
@@ -158,13 +168,40 @@ else if(cmd==="node441"){
 
 print("ACCESSING NODE 441...");
 print("MAINTENANCE CORRIDOR");
+print("12133433311212124421222421111333433131");
+
+print("");
+
+}
+
+else if(cmd==="node442"){
+
+print("ACCESSING NODE 442...");
+print("MAINTENANCE CORRIDOR KEY");
+
+print("1 = 45:315 0:270");
+print("2 = 90:270 315:225 135:180 225:270 0:315");
+print("3 = 45:225 45:180 90:180 0:315");
+print("4 = 180:0 315:270 90:45 135:225");
+print("");
+
+}
+
+else if(cmd==="node443"){
+
+print("ACCESSING NODE 443...");
+print("KEY REMINDER");
+    
+print("REMEMBER YOUR PAST, THROUGH EVERY MINUTE, THEN EVERY HOUR. THEN LOOK TO THE FUTURE.");
+print("");
 
 }
 
 else{
 
 print("UNKNOWN COMMAND");
-
+print("");
+    
 }
 
 }
