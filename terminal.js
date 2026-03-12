@@ -90,7 +90,8 @@ await print(" ");
 else if(cmd==="logs"){
 
 if(!loggedIn){
-print("ACCESS RESTRICTED");
+await print("ACCESS RESTRICTED");
+await print("")
 return;
 }
 
