@@ -67,7 +67,7 @@ else if(cmd==="login"){
 
 let password=prompt("ENTER ACCESS PASSWORD");
 
-if(password==="tapio"){
+if(password==="ROOTSINTHESOIL"){
 
 loggedIn=true;
 print("ACCESS GRANTED");
