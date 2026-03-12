@@ -78,7 +78,7 @@ print("");
 }else{
 
 print("ACCESS DENIED");
-print("");
+print(" ");
 
 }
 
