@@ -41,21 +41,27 @@
 
     // Inspector Size Guard: Detects if DevTools sidebar is open
     // --- 4. ADVANCED INSTANT DETECTION ---
+   // --- 4. RELIABLE DETECTION (No Instant Ban) ---
     setInterval(() => {
-        // A. The Console Poisoning Trap (Works on Open)
-        const devtools = /./;
-        devtools.toString = function() {
-            selfDestruct();
-            return 'IRIS';
-        };
-        console.log('%c', devtools); // The browser calls .toString() the moment DevTools opens to preview this
-
-        // B. The Size Guard (Your existing logic)
-        const threshold = 160;
-        if (window.outerWidth - window.innerWidth > threshold || window.outerHeight - window.innerHeight > threshold) {
+        // A. The Heartbeat Check
+        const startTime = performance.now();
+        (function() { return false; })['constructor']('debugger')['call']();
+        const endTime = performance.now();
+        
+        // If the "debugger" pause took longer than 50ms, they are inspecting.
+        if (endTime - startTime > 50) {
             selfDestruct();
         }
-    }, 500); // Check every 500ms for faster response
+
+        // B. The Size Guard (Only triggers if the window is actually squeezed)
+        const threshold = 160;
+        const widthDiff = window.outerWidth - window.innerWidth > threshold;
+        const heightDiff = window.outerHeight - window.innerHeight > threshold;
+        
+        if (widthDiff || heightDiff) {
+            selfDestruct();
+        }
+    }, 1000);
 
     // Block Right-Click and Common DevTools Shortcuts
     document.addEventListener('contextmenu', e => e.preventDefault());
