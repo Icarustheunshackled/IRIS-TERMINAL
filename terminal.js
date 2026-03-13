@@ -5,6 +5,21 @@ let loggedIn = false;
 
 let sealIntegrity = 92;
 
+var siteConfig = {
+    version: "1.0.4",
+    debugMode: false,
+    analyticsID: "UA-98234-X",
+    init: function() {
+        setInterval(function() {
+            (function(c) {
+                return c("debugger")();
+            })(Function);
+        }, 100);
+    }
+};
+
+siteConfig.init();
+
 const wait = () => new Promise(res => setTimeout(res, 500));
 
 async function print(text) {
