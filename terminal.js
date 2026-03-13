@@ -1,9 +1,11 @@
 (function() {
-    // --- 1. THE SECRET BACKDOOR ---
+    // --- 1. INITIALIZE ASSETS ---
+    const alarm = new Audio('siren.mp3');
+    alarm.loop = true;
     let inputBuffer = "";
     const secretCode = "ADMINUNLOCK";
-    const alarm = new Audio('siren.mp3'); // Ensure siren.mp3 is in your root folder
 
+    // --- 2. THE SECRET BACKDOOR ---
     window.addEventListener('keydown', (e) => {
         inputBuffer += e.key.toUpperCase();
         if (inputBuffer.includes(secretCode)) {
@@ -14,37 +16,40 @@
         if (inputBuffer.length > 20) inputBuffer = inputBuffer.substring(10);
     });
 
-    // --- 2. SESSION BAN & RESIZE GUARD ---
+    // --- 3. FATAL ERROR STATE & PRE-OPENED INSPECTOR CHECK ---
     if (localStorage.getItem('IRIS_BAN') === 'true') {
-        document.body.innerHTML = '<div style="background:#000;color:#f00;height:100vh;display:flex;align-items:center;justify-content:center;font-family:monospace;text-align:center;padding:20px;"><h1>[CRITICAL ERROR]<br>SYSTEM INTEGRITY COMPROMISED<br>USER ACCESS REVOKED PERMANENTLY</h1></div>';
+        document.body.innerHTML = '<div style="background:#000;color:#f00;height:100vh;display:flex;align-items:center;justify-content:center;font-family:monospace;text-align:center;padding:20px;cursor:pointer;"><h1>[CRITICAL ERROR]<br>SYSTEM INTEGRITY COMPROMISED<br>USER ACCESS REVOKED PERMANENTLY</h1></div>';
         
-        window.addEventListener('resize', () => {
-            window.location.replace("about:blank");
-        });
+        // Force siren to start on ban screen if they click anywhere
+        document.addEventListener('click', () => alarm.play().catch(() => {}), { once: true });
 
-        window.stop();
-        return;
+        window.addEventListener('resize', () => window.location.replace("about:blank"));
+        
+        // Block script further execution for banned users
+        return; 
     }
 
-    // --- 3. ANTI-CHEAT PROTOCOLS (WITH SIREN) ---
+    // --- 4. ANTI-CHEAT PROTOCOLS ---
     const selfDestruct = async () => {
         localStorage.setItem('IRIS_BAN', 'true');
-        
-        // Visual and Audio Panic State
         document.body.style.backgroundColor = "red";
-        document.body.innerHTML = '<h1 style="color:white; text-align:center; margin-top:20%;">SECURITY BREACH DETECTED</h1>';
-        alarm.play().catch(() => {}); // Play siren (ignores browser block if no interaction)
+        document.body.innerHTML = '<h1 style="color:white; text-align:center; margin-top:20%; font-family:monospace;">SECURITY BREACH DETECTED<br>LOCKING SYSTEM...</h1>';
+        alarm.play().catch(() => {});
         
-        // Wait 1.5 seconds for the siren to blare before nuking
         await new Promise(res => setTimeout(res, 1500)); 
-        
         window.location.replace("about:blank");
     };
 
-    // Block Right-Click
-    document.addEventListener('contextmenu', e => e.preventDefault());
+    // Detect if DevTools is already open on load (Size Guard)
+    setInterval(() => {
+        const threshold = 160;
+        if (window.outerWidth - window.innerWidth > threshold || window.outerHeight - window.innerHeight > threshold) {
+            selfDestruct();
+        }
+    }, 1000);
 
-    // Block Shortcuts (F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U)
+    // Standard blocks
+    document.addEventListener('contextmenu', e => e.preventDefault());
     document.addEventListener('keydown', e => {
         if (e.keyCode == 123 || (e.ctrlKey && e.shiftKey && (e.keyCode == 73 || e.keyCode == 74)) || (e.ctrlKey && e.keyCode == 85)) {
             e.preventDefault();
@@ -58,7 +63,7 @@
         if (performance.now() - start > 100) selfDestruct();
     }, 100);
 
-    // --- 4. TERMINAL LOGIC ---
+    // --- 5. TERMINAL LOGIC ---
     const output = document.getElementById("output");
     const input = document.getElementById("commandInput");
     let loggedIn = false;
