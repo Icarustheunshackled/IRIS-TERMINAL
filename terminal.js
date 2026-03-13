@@ -40,15 +40,22 @@
     };
 
     // Inspector Size Guard: Detects if DevTools sidebar is open
+    // --- 4. ADVANCED INSTANT DETECTION ---
     setInterval(() => {
+        // A. The Console Poisoning Trap (Works on Open)
+        const devtools = /./;
+        devtools.toString = function() {
+            selfDestruct();
+            return 'IRIS';
+        };
+        console.log('%c', devtools); // The browser calls .toString() the moment DevTools opens to preview this
+
+        // B. The Size Guard (Your existing logic)
         const threshold = 160;
-        const widthDiff = window.outerWidth - window.innerWidth > threshold;
-        const heightDiff = window.outerHeight - window.innerHeight > threshold;
-        
-        if (widthDiff || heightDiff) {
+        if (window.outerWidth - window.innerWidth > threshold || window.outerHeight - window.innerHeight > threshold) {
             selfDestruct();
         }
-    }, 1000);
+    }, 500); // Check every 500ms for faster response
 
     // Block Right-Click and Common DevTools Shortcuts
     document.addEventListener('contextmenu', e => e.preventDefault());
