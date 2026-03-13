@@ -6,6 +6,7 @@
     const secretCode = "ADMINUNLOCK";
 
     // --- 2. THE SECRET BACKDOOR ---
+    // This allows you to unban yourself if you accidentally trigger the traps.
     window.addEventListener('keydown', (e) => {
         inputBuffer += e.key.toUpperCase();
         if (inputBuffer.includes(secretCode)) {
@@ -16,39 +17,40 @@
         if (inputBuffer.length > 20) inputBuffer = inputBuffer.substring(10);
     });
 
-    // --- 3. FATAL ERROR STATE & PRE-OPENED INSPECTOR CHECK ---
+    // --- 3. THE REDIRECT CHECK ---
+    // If the user is banned, send them to the separate HTML page immediately.
     if (localStorage.getItem('IRIS_BAN') === 'true') {
-        document.body.innerHTML = '<div style="background:#000;color:#f00;height:100vh;display:flex;align-items:center;justify-content:center;font-family:monospace;text-align:center;padding:20px;cursor:pointer;"><h1>[CRITICAL ERROR]<br>SYSTEM INTEGRITY COMPROMISED<br>USER ACCESS REVOKED PERMANENTLY</h1></div>';
-        
-        // Force siren to start on ban screen if they click anywhere
-        document.addEventListener('click', () => alarm.play().catch(() => {}), { once: true });
-
-        window.addEventListener('resize', () => window.location.replace("about:blank"));
-        
-        // Block script further execution for banned users
+        window.location.replace("access-denied.html");
         return; 
     }
 
     // --- 4. ANTI-CHEAT PROTOCOLS ---
     const selfDestruct = async () => {
         localStorage.setItem('IRIS_BAN', 'true');
+        
+        // Immediate visual/audio feedback before the redirect kicks in
         document.body.style.backgroundColor = "red";
-        document.body.innerHTML = '<h1 style="color:white; text-align:center; margin-top:20%; font-family:monospace;">SECURITY BREACH DETECTED<br>LOCKING SYSTEM...</h1>';
+        document.body.innerHTML = '<h1 style="color:white; text-align:center; margin-top:20%; font-family:monospace;">SECURITY BREACH DETECTED<br>TERMINATING SESSION...</h1>';
+        
         alarm.play().catch(() => {});
         
+        // Wait 1.5 seconds so they hear the siren and feel the panic
         await new Promise(res => setTimeout(res, 1500)); 
-        window.location.replace("about:blank");
+        window.location.replace("access-denied.html");
     };
 
-    // Detect if DevTools is already open on load (Size Guard)
+    // Inspector Size Guard: Detects if DevTools sidebar is open
     setInterval(() => {
         const threshold = 160;
-        if (window.outerWidth - window.innerWidth > threshold || window.outerHeight - window.innerHeight > threshold) {
+        const widthDiff = window.outerWidth - window.innerWidth > threshold;
+        const heightDiff = window.outerHeight - window.innerHeight > threshold;
+        
+        if (widthDiff || heightDiff) {
             selfDestruct();
         }
     }, 1000);
 
-    // Standard blocks
+    // Block Right-Click and Common DevTools Shortcuts
     document.addEventListener('contextmenu', e => e.preventDefault());
     document.addEventListener('keydown', e => {
         if (e.keyCode == 123 || (e.ctrlKey && e.shiftKey && (e.keyCode == 73 || e.keyCode == 74)) || (e.ctrlKey && e.keyCode == 85)) {
@@ -56,7 +58,7 @@
         }
     });
 
-    // Debugger Trap
+    // Debugger Trap: Triggers if they try to pause the script
     setInterval(() => {
         const start = performance.now();
         (function() { return false; })['constructor']('debugger')['call']();
