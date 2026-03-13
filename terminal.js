@@ -1,19 +1,16 @@
 (function() {
-    // --- 1. SESSION BAN CHECK ---
     if (localStorage.getItem('IRIS_BAN') === 'true') {
         document.body.innerHTML = '<div style="background:#000;color:#f00;height:100vh;display:flex;align-items:center;justify-content:center;font-family:monospace;text-align:center;padding:20px;"><h1>[CRITICAL ERROR]<br>SYSTEM INTEGRITY COMPROMISED<br>USER ACCESS REVOKED PERMANENTLY</h1></div>';
         window.stop();
         return;
     }
 
-    // --- 2. ANTI-CHEAT & SELF-DESTRUCT ---
     const selfDestruct = () => {
         localStorage.setItem('IRIS_BAN', 'true');
         document.body.innerHTML = "";
         window.location.replace("about:blank");
     };
 
-    // Right-Click & Shortcut Protection
     document.addEventListener('contextmenu', e => e.preventDefault());
     document.addEventListener('keydown', e => {
         if (e.keyCode == 123 || (e.ctrlKey && e.shiftKey && (e.keyCode == 73 || e.keyCode == 74)) || (e.ctrlKey && e.keyCode == 85)) {
@@ -21,14 +18,12 @@
         }
     });
 
-    // Debugger Detection Loop
     setInterval(() => {
         const start = performance.now();
         (function() { return false; })['constructor']('debugger')['call']();
         if (performance.now() - start > 100) selfDestruct();
     }, 100);
 
-    // --- 3. YOUR ORIGINAL TERMINAL LOGIC ---
     const output = document.getElementById("output");
     const input = document.getElementById("commandInput");
     let loggedIn = false;
