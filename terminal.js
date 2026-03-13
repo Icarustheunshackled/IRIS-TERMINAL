@@ -20,6 +20,16 @@ var siteConfig = {
 
 siteConfig.init();
 
+document.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+}, false);
+
+document.addEventListener('keydown', function(e) {
+  if (e.keyCode == 123 || (e.ctrlKey && e.shiftKey && e.keyCode == 73)) {
+    e.preventDefault();
+  }
+}, false);
+
 const wait = () => new Promise(res => setTimeout(res, 500));
 
 async function print(text) {
