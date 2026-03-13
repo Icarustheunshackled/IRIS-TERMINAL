@@ -40,28 +40,27 @@
     };
 
     // Inspector Size Guard: Detects if DevTools sidebar is open
-    // --- 4. ADVANCED INSTANT DETECTION ---
-   // --- 4. RELIABLE DETECTION (No Instant Ban) ---
-    setInterval(() => {
-        // A. The Heartbeat Check
-        const startTime = performance.now();
+   // --- 4. INSTANT LIVE DETECTION ---
+    const check = () => {
+        const start = performance.now();
+        // This 'debugger' is wrapped in a way that modern browsers 
+        // probe even if they don't fully pause execution.
         (function() { return false; })['constructor']('debugger')['call']();
-        const endTime = performance.now();
-        
-        // If the "debugger" pause took longer than 50ms, they are inspecting.
-        if (endTime - startTime > 50) {
-            selfDestruct();
-        }
+        const end = performance.now();
 
-        // B. The Size Guard (Only triggers if the window is actually squeezed)
-        const threshold = 160;
-        const widthDiff = window.outerWidth - window.innerWidth > threshold;
-        const heightDiff = window.outerHeight - window.innerHeight > threshold;
-        
-        if (widthDiff || heightDiff) {
+        if (end - start > 50) {
             selfDestruct();
         }
-    }, 1000);
+    };
+
+    // Run the check every 500ms
+    const senseThreat = setInterval(() => {
+        // Size Check (Instant if they are side-by-side)
+        if (window.outerWidth - window.innerWidth > 160 || window.outerHeight - window.innerHeight > 160) {
+            selfDestruct();
+        }
+        check();
+    }, 500);
 
     // Block Right-Click and Common DevTools Shortcuts
     document.addEventListener('contextmenu', e => e.preventDefault());
