@@ -40,27 +40,31 @@
     };
 
     // Inspector Size Guard: Detects if DevTools sidebar is open
-   // --- 4. INSTANT LIVE DETECTION ---
-    const check = () => {
-        const start = performance.now();
-        // This 'debugger' is wrapped in a way that modern browsers 
-        // probe even if they don't fully pause execution.
-        (function() { return false; })['constructor']('debugger')['call']();
-        const end = performance.now();
+  // --- 4. THE DEAD MAN'S SWITCH (Live Detection) ---
+    let lastHeartbeat = performance.now();
 
-        if (end - start > 50) {
+    // 1. The "Heartbeat" - This gets paused by the debugger
+    setInterval(() => {
+        lastHeartbeat = performance.now();
+        
+        // Classic debugger trigger to catch them if they try to step through
+        (function() { return false; })['constructor']('debugger')['call']();
+    }, 100);
+
+    // 2. The "Monitor" - This catches the pause
+    setInterval(() => {
+        const currentTime = performance.now();
+        
+        // If the gap is > 300ms, the 'Heartbeat' was paused by a debugger
+        if (currentTime - lastHeartbeat > 300) {
             selfDestruct();
         }
-    };
 
-    // Run the check every 500ms
-    const senseThreat = setInterval(() => {
-        // Size Check (Instant if they are side-by-side)
+        // Also check window size here for the "Pre-opened" catch
         if (window.outerWidth - window.innerWidth > 160 || window.outerHeight - window.innerHeight > 160) {
             selfDestruct();
         }
-        check();
-    }, 500);
+    }, 100);
 
     // Block Right-Click and Common DevTools Shortcuts
     document.addEventListener('contextmenu', e => e.preventDefault());
