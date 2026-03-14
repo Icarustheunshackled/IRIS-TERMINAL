@@ -1,1 +1,192 @@
-function _0x18e3(_0x34adc5,_0x27afb5){_0x34adc5=_0x34adc5-0x174;const _0x3be1c7=_0x3be1();let _0x18e307=_0x3be1c7[_0x34adc5];return _0x18e307;}(function(_0x1e162b,_0x524e47){const _0xf38f21=_0x18e3,_0x31b183=_0x1e162b();while(!![]){try{const _0x399a8c=parseInt(_0xf38f21(0x1ba))/0x1*(-parseInt(_0xf38f21(0x1ce))/0x2)+-parseInt(_0xf38f21(0x1ab))/0x3*(-parseInt(_0xf38f21(0x1d1))/0x4)+-parseInt(_0xf38f21(0x1da))/0x5+-parseInt(_0xf38f21(0x184))/0x6+-parseInt(_0xf38f21(0x1cb))/0x7*(parseInt(_0xf38f21(0x1c0))/0x8)+parseInt(_0xf38f21(0x1d6))/0x9+-parseInt(_0xf38f21(0x1a0))/0xa*(-parseInt(_0xf38f21(0x18a))/0xb);if(_0x399a8c===_0x524e47)break;else _0x31b183['push'](_0x31b183['shift']());}catch(_0x8cef33){_0x31b183['push'](_0x31b183['shift']());}}}(_0x3be1,0x27334),(function(){const _0x44e7e9=_0x18e3,_0x58c3e1=new Audio(_0x44e7e9(0x1a8));_0x58c3e1[_0x44e7e9(0x1db)]=!![];if(localStorage[_0x44e7e9(0x1a3)]('IRIS_BAN')===_0x44e7e9(0x1cc)){window[_0x44e7e9(0x181)]['replace']('access-denied.html');return;}const _0x39752b=async()=>{const _0x480a66=_0x44e7e9;localStorage[_0x480a66(0x1d4)](_0x480a66(0x19b),_0x480a66(0x1cc)),document['body'][_0x480a66(0x1de)][_0x480a66(0x1a7)]=_0x480a66(0x1b7),document[_0x480a66(0x19f)][_0x480a66(0x18b)]=_0x480a66(0x176),_0x58c3e1[_0x480a66(0x179)]()[_0x480a66(0x18c)](()=>{}),await new Promise(_0x5b107f=>setTimeout(_0x5b107f,0x5dc)),window[_0x480a66(0x181)][_0x480a66(0x1b4)](_0x480a66(0x1a6));};setInterval(()=>{const _0x2077b6=_0x44e7e9,_0x570e23=performance[_0x2077b6(0x185)]();(function(){return![];}[_0x2077b6(0x1c3)](_0x2077b6(0x1a5))[_0x2077b6(0x1b6)]());const _0x562e15=performance[_0x2077b6(0x185)]();_0x562e15-_0x570e23>0x64&&_0x39752b();const _0x4cf7e8=0xa0;(window[_0x2077b6(0x1a1)]-window[_0x2077b6(0x188)]>_0x4cf7e8||window[_0x2077b6(0x1cd)]-window['innerHeight']>_0x4cf7e8)&&_0x39752b();},0x1f4),document[_0x44e7e9(0x1d9)]('contextmenu',_0x3336a1=>_0x3336a1[_0x44e7e9(0x1a4)]()),document[_0x44e7e9(0x1d9)](_0x44e7e9(0x17b),_0x1bb0f8=>{const _0x516e38=_0x44e7e9;(_0x1bb0f8[_0x516e38(0x178)]==0x7b||_0x1bb0f8[_0x516e38(0x19d)]&&_0x1bb0f8[_0x516e38(0x1d0)]&&(_0x1bb0f8[_0x516e38(0x178)]==0x49||_0x1bb0f8['keyCode']==0x4a)||_0x1bb0f8[_0x516e38(0x19d)]&&_0x1bb0f8[_0x516e38(0x178)]==0x55)&&_0x1bb0f8[_0x516e38(0x1a4)]();});const _0x211add=document[_0x44e7e9(0x1cf)]('output'),_0x85e180=document[_0x44e7e9(0x1cf)](_0x44e7e9(0x175));let _0x2d6315=![],_0x5947d3=0x5c;const _0x12e0ef=()=>new Promise(_0x41ae91=>setTimeout(_0x41ae91,0x1f4));async function _0x165113(_0x3c5089){const _0x3a314b=_0x44e7e9;if(!_0x211add)return;_0x211add[_0x3a314b(0x18b)]+=_0x3c5089+'<br>',window['scrollTo'](0x0,document['body']['scrollHeight']),await _0x12e0ef();}async function _0x1d5324(){const _0x15ae5a=_0x44e7e9;await _0x165113(_0x15ae5a(0x1d8)),await _0x165113(_0x15ae5a(0x192)),await _0x165113(_0x15ae5a(0x17d)),await _0x165113(_0x15ae5a(0x19c)),await _0x165113(''),await _0x165113('WARNING:\x20UNKNOWN\x20PROCESS\x20DETECTED'),await _0x165113(''),await _0x165113(_0x15ae5a(0x187)),await _0x165113('MAINTENANCE\x20HAS\x20BEEN\x20NOTIFIED'),await _0x165113(''),await _0x165113(_0x15ae5a(0x1c7)),await _0x165113('IRIS\x20SECURITY\x20INTERFACE\x20v3.0'),await _0x165113(_0x15ae5a(0x1c4)),await _0x165113(''),await _0x165113('STATUS:\x20ONLINE'),await _0x165113(_0x15ae5a(0x1aa)+_0x5947d3+'%'),await _0x165113('ANOMALY\x20DETECTED'),await _0x165113(''),await _0x165113(_0x15ae5a(0x190)),await _0x165113('');}async function _0x44fd35(_0x48ed28){const _0x2216bc=_0x44e7e9;if(_0x48ed28==='help')await _0x165113('AVAILABLE\x20COMMANDS:'),await _0x165113(_0x2216bc(0x196)),await _0x165113('');else{if(_0x48ed28===_0x2216bc(0x1bc)){let _0x5ac039=prompt(_0x2216bc(0x1df));_0x5ac039===_0x2216bc(0x1a9)?(_0x2d6315=!![],await _0x165113(_0x2216bc(0x193)),await _0x165113('')):(await _0x165113(_0x2216bc(0x1b0)),await _0x165113('\x20'));}else{if(_0x48ed28===_0x2216bc(0x19e)){if(!_0x2d6315){await _0x165113('ACCESS\x20RESTRICTED'),await _0x165113('');return;}await _0x165113('LOG\x2002.11.26'),await _0x165113(_0x2216bc(0x182)),await _0x165113(_0x2216bc(0x198)),await _0x165113(_0x2216bc(0x180)),await _0x165113(_0x2216bc(0x1c1)),await _0x165113(''),await _0x165113(_0x2216bc(0x1a2)),await _0x165113(_0x2216bc(0x18f)),await _0x165113('ATTEMPTING\x20████████████'),await _0x165113('ERROR'),await _0x165113(_0x2216bc(0x1c6)),await _0x165113('');}else{if(_0x48ed28===_0x2216bc(0x17f))await _0x165113(_0x2216bc(0x1d2)),await _0x165113(_0x2216bc(0x1ad)),await _0x165113(_0x2216bc(0x194)),await _0x165113(_0x2216bc(0x1dc)),await _0x165113(_0x2216bc(0x1b1)),await _0x165113(_0x2216bc(0x1b5)),await _0x165113(_0x2216bc(0x1ca)),await _0x165113(_0x2216bc(0x17e)),await _0x165113(_0x2216bc(0x1c8)+_0x5947d3+'%'),await _0x165113('');else{if(_0x48ed28===_0x2216bc(0x1e0))await _0x165113(_0x2216bc(0x1c5)),await _0x165113(_0x2216bc(0x1af)),await _0x165113('');else{if(_0x48ed28===_0x2216bc(0x1b9))await _0x165113('ARCHIVE\x20LOCKED'),await _0x165113('');else{if(_0x48ed28===_0x2216bc(0x1bb))await _0x165113(_0x2216bc(0x195)),await _0x165113('GREEN\x20SHARD'),await _0x165113(_0x2216bc(0x1d3)),await _0x165113(_0x2216bc(0x18e)),await _0x165113('');else{if(_0x48ed28===_0x2216bc(0x17c))await _0x165113(_0x2216bc(0x19a)),await _0x165113(_0x2216bc(0x1b8)),await _0x165113(_0x2216bc(0x177)),await _0x165113('');else{if(_0x48ed28==='node441')await _0x165113(_0x2216bc(0x1d5)),await _0x165113(_0x2216bc(0x186)),await _0x165113(_0x2216bc(0x1d7)),await _0x165113('');else{if(_0x48ed28===_0x2216bc(0x189))await _0x165113('ACCESSING\x20NODE\x20442...'),await _0x165113(_0x2216bc(0x1be)),await _0x165113(_0x2216bc(0x197)),await _0x165113('2\x20=\x2090:270\x20315:225\x20135:180\x20225:270\x200:315'),await _0x165113(_0x2216bc(0x191)),await _0x165113('4\x20=\x20180:0\x20315:270\x2090:45\x20135:225'),await _0x165113('');else{if(_0x48ed28===_0x2216bc(0x1bd))await _0x165113(_0x2216bc(0x18d)),await _0x165113(_0x2216bc(0x199)),await _0x165113(_0x2216bc(0x1c9)),await _0x165113('');else _0x48ed28===_0x2216bc(0x1dd)?(await _0x165113(_0x2216bc(0x1b2)),await _0x165113(_0x2216bc(0x1ac)),await _0x165113('SAVE\x20US.\x20'[_0x2216bc(0x1ae)](0x32)+_0x2216bc(0x17a)),await _0x165113('')):(await _0x165113(_0x2216bc(0x183)),await _0x165113(''));}}}}}}}}}}}_0x85e180[_0x44e7e9(0x1d9)](_0x44e7e9(0x17b),function(_0x43d30d){const _0x4ac7c4=_0x44e7e9;if(_0x43d30d[_0x4ac7c4(0x1c2)]==='Enter'){let _0x361726=_0x85e180[_0x4ac7c4(0x174)][_0x4ac7c4(0x1b3)]()[_0x4ac7c4(0x1bf)]();_0x165113('>\x20'+_0x361726),_0x44fd35(_0x361726),_0x85e180[_0x4ac7c4(0x174)]='';}}),_0x1d5324();}()));function _0x3be1(){const _0x300cc9=['key','constructor','Tapio\x20Land\x20Monitoring\x20System','TAPIO\x20LAND\x20NODE\x20MAP','ERROR','UPDATE\x20CONFIRMED...','TOTAL\x20INTEGRITY:\x20','REMEMBER\x20YOUR\x20PAST,\x20THROUGH\x20EVERY\x20MINUTE,\x20THEN\x20EVERY\x20HOUR.\x20THEN\x20LOOK\x20TO\x20THE\x20FUTURE.','████\x206:\x20DEGRADED','148869qeWcTT','true','outerHeight','6cbaTCO','getElementById','shiftKey','63548ZQMASB','████\x20STATUS','Classification:\x20██████\x20Fragment','setItem','ACCESSING\x20NODE\x20441...','2185776RMkTlP','21242122113121133134333111331111242121','BOOTING\x20IRIS\x20SYSTEM...','addEventListener','105035HlkHlR','loop','████\x203:\x20STABLE','node666','style','ENTER\x20ACCESS\x20PASSWORD','nodes','value','commandInput','<h1\x20style=\x22color:white;\x20text-align:center;\x20margin-top:20%;\x20font-family:monospace;\x22>SECURITY\x20BREACH\x20DETECTED<br>TERMINATING\x20SESSION...</h1>','███████\x20—\x20investigating','keyCode','play','PLEASE.','keydown','users','LOADING\x20████\x20MONITORING...','████\x207:\x20DEGRADED','status','LOCATION:\x20████████\x20CHAMBER','location','SYSTEM\x20SCAN\x20COMPLETE','UNKNOWN\x20COMMAND','732072lsrAoP','now','MAINTENANCE\x20CORRIDOR','SYSTEM\x20INTEGRITY:\x2058%','innerWidth','node442','22Rardzg','innerHTML','catch','ACCESSING\x20NODE\x20443...','Origin:\x20█████\x20Reserve','██████\x20ACTIVITY\x20DETECTED','Type\x20\x27help\x27\x20for\x20commands.','3\x20=\x2045:225\x2045:180\x2090:180\x200:315','LOADING\x20SECURITY\x20MODULE...','ACCESS\x20GRANTED','████\x202:\x20STABLE','SHARD\x20DATABASE','login,\x20logs,\x20nodes,\x20status,\x20archive,\x20shards,\x20users','1\x20=\x2045:315\x200:270','UNIDENTIFIED\x20PRESENCE\x20DETECTED','KEY\x20REMINDER','PLAYER\x20WATCHLIST','IRIS_BAN','LOADING\x20███████\x20CONTAINMENT...','ctrlKey','logs','body','1055930hTJJyp','outerWidth','LOG\x2002.18.26','getItem','preventDefault','debugger','access-denied.html','backgroundColor','siren.mp3','ROOTSINTHESOIL','████\x20INTEGRITY:\x20','15SYQfOA','HELLSCAPE','████\x201:\x20STABLE','repeat','node441,\x20node442,\x20node443','ACCESS\x20DENIED','████\x204:\x20DEGRADED','AC\x20ES\x20I\x20G\x20N\x20DE\x2066\x20.\x20.','toLowerCase','replace','████\x205:\x20DEGRADED','call','red','bee_keeper\x20—\x20curious','archive','34100KwGsBC','shards','login','node443','MAINTENANCE\x20CORRIDOR\x20KEY','trim','48TtiMdw','ACTION:\x20MONITOR'];_0x3be1=function(){return _0x300cc9;};return _0x3be1();}
+(function() {
+    // --- 1. INITIALIZE ASSETS ---
+    const alarm = new Audio('siren.mp3');
+    alarm.loop = true;
+
+    // --- 2. THE REDIRECT CHECK ---
+    if (localStorage.getItem('IRIS_BAN') === 'true') {
+        window.location.replace("access-denied.html");
+        return; 
+    }
+
+    // --- 3. ANTI-CHEAT PROTOCOLS ---
+    const selfDestruct = async () => {
+        localStorage.setItem('IRIS_BAN', 'true');
+        
+        // Immediate visual/audio feedback
+        document.body.style.backgroundColor = "red";
+        document.body.innerHTML = '<h1 style="color:white; text-align:center; margin-top:20%; font-family:monospace;">SECURITY BREACH DETECTED<br>TERMINATING SESSION...</h1>';
+        
+        alarm.play().catch(() => {});
+        
+        await new Promise(res => setTimeout(res, 1500)); 
+        window.location.replace("access-denied.html");
+    };
+
+    setInterval(() => {
+        // Simple Debugger Check: Measures execution time.
+        // If DevTools is open, the 'debugger' statement forces a pause, 
+        // making the difference between start and end huge.
+        const start = performance.now();
+        (function() { return false; })['constructor']('debugger')['call']();
+        const end = performance.now();
+
+        if (end - start > 100) {
+            selfDestruct();
+        }
+
+        // Size Guard: Catch side-docked DevTools
+        const threshold = 160;
+        if (window.outerWidth - window.innerWidth > threshold || window.outerHeight - window.innerHeight > threshold) {
+            selfDestruct();
+        }
+    }, 500); // Checked twice per second for stability
+
+    // Block Right-Click and Common DevTools Shortcuts
+    document.addEventListener('contextmenu', e => e.preventDefault());
+    document.addEventListener('keydown', e => {
+        if (e.keyCode == 123 || (e.ctrlKey && e.shiftKey && (e.keyCode == 73 || e.keyCode == 74)) || (e.ctrlKey && e.keyCode == 85)) {
+            e.preventDefault();
+        }
+    });
+
+    // --- 5. TERMINAL LOGIC ---
+    const output = document.getElementById("output");
+    const input = document.getElementById("commandInput");
+    let loggedIn = false;
+    let sealIntegrity = 92;
+
+    const wait = () => new Promise(res => setTimeout(res, 500));
+
+    async function print(text) {
+        if(!output) return;
+        output.innerHTML += text + "<br>";
+        window.scrollTo(0, document.body.scrollHeight);
+        await wait();
+    }
+
+    async function boot() {
+        await print("BOOTING IRIS SYSTEM...");
+        await print("LOADING SECURITY MODULE...");
+        await print("LOADING ████ MONITORING...");
+        await print("LOADING ███████ CONTAINMENT...");
+        await print("");
+        await print("WARNING: UNKNOWN PROCESS DETECTED");
+        await print("");
+        await print("SYSTEM INTEGRITY: 58%");
+        await print("MAINTENANCE HAS BEEN NOTIFIED");
+        await print("");
+        await print("UPDATE CONFIRMED...")
+        await print("IRIS SECURITY INTERFACE v3.0");
+        await print("Tapio Land Monitoring System");
+        await print("");
+        await print("STATUS: ONLINE");
+        await print("████ INTEGRITY: " + sealIntegrity + "%");
+        await print("ANOMALY DETECTED");
+        await print("");
+        await print("Type 'help' for commands.");
+        await print("");
+    }
+
+    async function runCommand(cmd) {
+        if (cmd === "help") {
+            await print("AVAILABLE COMMANDS:");
+            await print("login, logs, nodes, status, archive, shards, users");
+            await print("");
+        } else if (cmd === "login") {
+            let password = prompt("ENTER ACCESS PASSWORD");
+            if (password === "ROOTSINTHESOIL") {
+                loggedIn = true;
+                await print("ACCESS GRANTED");
+                await print("");
+            } else {
+                await print("ACCESS DENIED");
+                await print(" ");
+            }
+        } else if (cmd === "logs") {
+            if (!loggedIn) {
+                await print("ACCESS RESTRICTED");
+                await print("");
+                return;
+            }
+            await print("LOG 02.11.26");
+            await print("SYSTEM SCAN COMPLETE");
+            await print("UNIDENTIFIED PRESENCE DETECTED");
+            await print("LOCATION: ████████ CHAMBER");
+            await print("ACTION: MONITOR");
+            await print("");
+            await print("LOG 02.18.26");
+            await print("██████ ACTIVITY DETECTED");
+            await print("ATTEMPTING ████████████");
+            await print("ERROR");
+            await print("ERROR");
+            await print("");
+        } else if (cmd === "status") {
+            await print("████ STATUS");
+            await print("████ 1: STABLE");
+            await print("████ 2: STABLE");
+            await print("████ 3: STABLE");
+            await print("████ 4: DEGRADED");
+            await print("████ 5: DEGRADED");
+            await print("████ 6: DEGRADED");
+            await print("████ 7: DEGRADED");
+            await print("TOTAL INTEGRITY: " + sealIntegrity + "%");
+            await print("");
+        } else if (cmd === "nodes") {
+            await print("TAPIO LAND NODE MAP");
+            await print("node441, node442, node443");
+            await print("");
+        } else if (cmd === "archive") {
+            await print("ARCHIVE LOCKED");
+            await print("");
+        } else if (cmd === "shards") {
+            await print("SHARD DATABASE");
+            await print("GREEN SHARD");
+            await print("Classification: ██████ Fragment");
+            await print("Origin: █████ Reserve");
+            await print("");
+        } else if (cmd === "users") {
+            await print("PLAYER WATCHLIST");
+            await print("bee_keeper — curious");
+            await print("███████ — investigating");
+            await print("");
+        } else if (cmd === "node441") {
+            await print("ACCESSING NODE 441...");
+            await print("MAINTENANCE CORRIDOR");
+            await print("212421221131211331343342333111331111424121");
+            await print("");
+        } else if (cmd === "node442") {
+            await print("ACCESSING NODE 442...");
+            await print("MAINTENANCE CORRIDOR KEY");
+            await print("1 = 45:315 0:270");
+            await print("2 = 90:270 315:225 135:180 225:270 0:315");
+            await print("3 = 45:225 45:180 90:180 0:315");
+            await print("4 = 180:0 315:270 90:45 135:225");
+            await print("");
+        } else if (cmd === "node443") {
+            await print("ACCESSING NODE 443...");
+            await print("KEY REMINDER");
+            await print("REMEMBER YOUR PAST, THROUGH EVERY MINUTE, THEN EVERY HOUR. THEN LOOK TO THE FUTURE.");
+            await print("");
+        } else if (cmd === "node666") {
+            await print("AC ES I G N DE 66 . .");
+            await print("HELLSCAPE");
+            await print("SAVE US. ".repeat(50) + "PLEASE.");
+            await print("");
+        } else {
+            await print("UNKNOWN COMMAND");
+            await print("");
+        }
+    }
+
+    input.addEventListener("keydown", function(e) {
+        if (e.key === "Enter") {
+            let cmd = input.value.toLowerCase().trim();
+            print("> " + cmd);
+            runCommand(cmd);
+            input.value = "";
+        }
+    });
+
+    boot();
+})();
