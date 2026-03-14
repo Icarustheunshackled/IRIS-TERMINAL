@@ -23,26 +23,24 @@
         window.location.replace("access-denied.html");
     };
 
-    // --- 4. STANDARD SECURITY MONITOR ---
     setInterval(() => {
-        // A. THE SQUEEZE CHECK (Size Guard)
-        // Checks if the window is being pushed by a sidebar
-        const threshold = 180;
-        const isSqueezed = (window.outerWidth - window.innerWidth > threshold) || 
-                           (window.outerHeight - window.innerHeight > threshold);
-
-        // B. THE EXECUTION SPIKE (Simple Debugger)
-        // If the debugger is open, it forces a pause, creating a time spike
+        // Simple Debugger Check: Measures execution time.
+        // If DevTools is open, the 'debugger' statement forces a pause, 
+        // making the difference between start and end huge.
         const start = performance.now();
         (function() { return false; })['constructor']('debugger')['call']();
         const end = performance.now();
-        const isPaused = (end - start > 200); // 200ms tolerance for slow CPUs
 
-        // IF EITHER TRIGGER FIRES, BAN.
-        if (isSqueezed || isPaused) {
+        if (end - start > 100) {
             selfDestruct();
         }
-    }, 1000); // Checks every 1 second - perfect balance of speed and stability
+
+        // Size Guard: Catch side-docked DevTools
+        const threshold = 160;
+        if (window.outerWidth - window.innerWidth > threshold || window.outerHeight - window.innerHeight > threshold) {
+            selfDestruct();
+        }
+    }, 500); // Checked twice per second for stability
 
     // Block Right-Click and Common DevTools Shortcuts
     document.addEventListener('contextmenu', e => e.preventDefault());
