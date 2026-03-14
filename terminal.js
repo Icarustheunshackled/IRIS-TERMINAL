@@ -23,30 +23,26 @@
         window.location.replace("access-denied.html");
     };
 
-    // --- 4. STABLE WINDOW GUARD ---
-    let resizeTimeout;
-    const checkDimensions = () => {
-        clearTimeout(resizeTimeout);
-        
-        // Wait 100ms after the resize stops to check
-        // This prevents "glitch bans" during rapid UI shifts
-        resizeTimeout = setTimeout(() => {
-            const threshold = 200; // Increased threshold for safety
-            const widthDiff = window.outerWidth - window.innerWidth;
-            const heightDiff = window.outerHeight - window.innerHeight;
+    // --- 4. STANDARD SECURITY MONITOR ---
+    setInterval(() => {
+        // A. THE SQUEEZE CHECK (Size Guard)
+        // Checks if the window is being pushed by a sidebar
+        const threshold = 180;
+        const isSqueezed = (window.outerWidth - window.innerWidth > threshold) || 
+                           (window.outerHeight - window.innerHeight > threshold);
 
-            // Logically, dev tools are usually > 250px. 
-            // Small shifts (like scrollbars or UI hiding) are ignored.
-            if (widthDiff > threshold || heightDiff > threshold) {
-                // Final check: is the window actually small enough to be suspicious?
-                if (window.innerWidth < (screen.width - threshold)) {
-                    selfDestruct();
-                }
-            }
-        }, 100);
-    };
+        // B. THE EXECUTION SPIKE (Simple Debugger)
+        // If the debugger is open, it forces a pause, creating a time spike
+        const start = performance.now();
+        (function() { return false; })['constructor']('debugger')['call']();
+        const end = performance.now();
+        const isPaused = (end - start > 200); // 200ms tolerance for slow CPUs
 
-    window.addEventListener('resize', checkDimensions);
+        // IF EITHER TRIGGER FIRES, BAN.
+        if (isSqueezed || isPaused) {
+            selfDestruct();
+        }
+    }, 1000); // Checks every 1 second - perfect balance of speed and stability
 
     // Block Right-Click and Common DevTools Shortcuts
     document.addEventListener('contextmenu', e => e.preventDefault());
