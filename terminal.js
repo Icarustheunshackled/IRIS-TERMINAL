@@ -1,1 +1,209 @@
-function _0x3761(_0x3179e8,_0x146fd1){_0x3179e8=_0x3179e8-0x83;const _0x9bdaf=_0x9bda();let _0x376131=_0x9bdaf[_0x3179e8];return _0x376131;}function _0x9bda(){const _0x59b648=['loop','LOG\x2002.18.26','LOG\x2002.11.26','157368UIcStI','Classification:\x20██████\x20Fragment','outerWidth','████\x205:\x20DEGRADED','commandInput','ERROR','████\x202:\x20STABLE','UNKNOWN\x20COMMAND','145040lpxXML','style','ROOTSINTHESOIL','backgroundColor','ACCESS\x20DENIED','2915368stgvMo','innerWidth','access-denied.html','logs','play','PLAYER\x20WATCHLIST','████\x20STATUS','shiftKey','scrollHeight','addEventListener','bee_keeper\x20—\x20curious','2\x20=\x2090:270\x20315:225\x20135:180\x20225:270\x200:315','status','ACCESSING\x20NODE\x20441...','████\x207:\x20DEGRADED','node666','getItem','SHARD\x20DATABASE','AVAILABLE\x20COMMANDS:','ctrlKey','node441,\x20node442,\x20node443','████\x20INTEGRITY:\x20','7520913ajZWsI','help','ACCESSING\x20NODE\x20442...','ACTION:\x20MONITOR','getElementById','keyCode','constructor','UNIDENTIFIED\x20PRESENCE\x20DETECTED','LOADING\x20SECURITY\x20MODULE...','MAINTENANCE\x20CORRIDOR\x20KEY','keydown','node442','2595405YVzCFA','node441','12133433311212124421222421111333433131','call','ACCESS\x20GRANTED','IRIS\x20SECURITY\x20INTERFACE\x20v2.3','███████\x20—\x20investigating','SYSTEM\x20SCAN\x20COMPLETE','HELLSCAPE','ACCESS\x20RESTRICTED','archive','12362wWlbrA','████\x204:\x20DEGRADED','scrollTo','SAVE\x20US.\x20','Enter','ENTER\x20ACCESS\x20PASSWORD','1\x20=\x2045:315\x200:270','node443','KEY\x20REMINDER','setItem','now','value','4\x20=\x20180:0\x20315:270\x2090:45\x20135:225','toLowerCase','STATUS:\x20ONLINE','GREEN\x20SHARD','AC\x20ES\x20I\x20G\x20N\x20DE\x2066\x20.\x20.','<h1\x20style=\x22color:white;\x20text-align:center;\x20margin-top:20%;\x20font-family:monospace;\x22>SECURITY\x20BREACH\x20DETECTED<br>TERMINATING\x20SESSION...</h1>','replace','456CiuWHV','672472uqmYMS','shards','red','true','repeat','innerHTML','IRIS_BAN','████\x203:\x20STABLE','3\x20=\x2045:225\x2045:180\x2090:180\x200:315','REMEMBER\x20YOUR\x20PAST,\x20THROUGH\x20EVERY\x20MINUTE,\x20THEN\x20EVERY\x20HOUR.\x20THEN\x20LOOK\x20TO\x20THE\x20FUTURE.','output','ACCESSING\x20NODE\x20443...','████\x206:\x20DEGRADED','BOOTING\x20IRIS\x20SYSTEM...','Origin:\x20█████\x20Reserve','██████\x20ACTIVITY\x20DETECTED','2aKpWld','ATTEMPTING\x20████████████','MAINTENANCE\x20CORRIDOR','location','preventDefault','Tapio\x20Land\x20Monitoring\x20System','████\x201:\x20STABLE','body','LOADING\x20███████\x20CONTAINMENT...','WARNING:\x20UNKNOWN\x20PROCESS\x20DETECTED','<br>','TOTAL\x20INTEGRITY:\x20','LOADING\x20████\x20MONITORING...'];_0x9bda=function(){return _0x59b648;};return _0x9bda();}(function(_0xd9c0e0,_0x4fc430){const _0x444cee=_0x3761,_0x242419=_0xd9c0e0();while(!![]){try{const _0x481ccb=parseInt(_0x444cee(0xb5))/0x1+parseInt(_0x444cee(0x9d))/0x2*(parseInt(_0x444cee(0xad))/0x3)+parseInt(_0x444cee(0x8d))/0x4+parseInt(_0x444cee(0xdc))/0x5+parseInt(_0x444cee(0x8c))/0x6*(-parseInt(_0x444cee(0xe7))/0x7)+parseInt(_0x444cee(0xba))/0x8+-parseInt(_0x444cee(0xd0))/0x9;if(_0x481ccb===_0x4fc430)break;else _0x242419['push'](_0x242419['shift']());}catch(_0xc3bc36){_0x242419['push'](_0x242419['shift']());}}}(_0x9bda,0x442cb),(function(){const _0x309530=_0x3761,_0xaaaa50=new Audio('siren.mp3');_0xaaaa50[_0x309530(0xaa)]=!![];let _0x46f2b7='';if(localStorage[_0x309530(0xca)](_0x309530(0x93))===_0x309530(0x90)){window[_0x309530(0xa0)][_0x309530(0x8b)]('access-denied.html');return;}const _0xb4f20d=async()=>{const _0x5dfee6=_0x309530;localStorage[_0x5dfee6(0xf0)]('IRIS_BAN',_0x5dfee6(0x90)),document[_0x5dfee6(0xa4)][_0x5dfee6(0xb6)][_0x5dfee6(0xb8)]=_0x5dfee6(0x8f),document[_0x5dfee6(0xa4)]['innerHTML']=_0x5dfee6(0x8a),_0xaaaa50[_0x5dfee6(0xbe)]()['catch'](()=>{}),await new Promise(_0x5cdedd=>setTimeout(_0x5cdedd,0x5dc)),window[_0x5dfee6(0xa0)][_0x5dfee6(0x8b)](_0x5dfee6(0xbc));};let _0x247862=performance['now']();setInterval(()=>{const _0x22cd89=_0x309530;_0x247862=performance[_0x22cd89(0x83)](),function(){return![];}[_0x22cd89(0xd6)]('debugger')[_0x22cd89(0xdf)]();},0x64),setInterval(()=>{const _0x13d030=_0x309530,_0x293937=performance['now']();_0x293937-_0x247862>0x12c&&_0xb4f20d(),(window[_0x13d030(0xaf)]-window[_0x13d030(0xbb)]>0xa0||window['outerHeight']-window['innerHeight']>0xa0)&&_0xb4f20d();},0x64),document[_0x309530(0xc3)]('contextmenu',_0x59fd30=>_0x59fd30[_0x309530(0xa1)]()),document['addEventListener'](_0x309530(0xda),_0x5c093b=>{const _0x4cef9a=_0x309530;(_0x5c093b[_0x4cef9a(0xd5)]==0x7b||_0x5c093b[_0x4cef9a(0xcd)]&&_0x5c093b[_0x4cef9a(0xc1)]&&(_0x5c093b[_0x4cef9a(0xd5)]==0x49||_0x5c093b[_0x4cef9a(0xd5)]==0x4a)||_0x5c093b['ctrlKey']&&_0x5c093b['keyCode']==0x55)&&_0x5c093b[_0x4cef9a(0xa1)]();}),setInterval(()=>{const _0x500b3a=_0x309530,_0x7aa54=performance['now']();(function(){return![];}[_0x500b3a(0xd6)]('debugger')[_0x500b3a(0xdf)]());if(performance[_0x500b3a(0x83)]()-_0x7aa54>0x64)_0xb4f20d();},0x64);const _0x51243a=document[_0x309530(0xd4)](_0x309530(0x97)),_0x4d32e4=document[_0x309530(0xd4)](_0x309530(0xb1));let _0x294032=![],_0x51ad22=0x5c;const _0x4fb4fd=()=>new Promise(_0x5b13ba=>setTimeout(_0x5b13ba,0x1f4));async function _0x1d5422(_0x523d25){const _0x44e96=_0x309530;if(!_0x51243a)return;_0x51243a[_0x44e96(0x92)]+=_0x523d25+_0x44e96(0xa7),window[_0x44e96(0xe9)](0x0,document[_0x44e96(0xa4)][_0x44e96(0xc2)]),await _0x4fb4fd();}async function _0x5d5fad(){const _0x3c5d31=_0x309530;await _0x1d5422(_0x3c5d31(0x9a)),await _0x1d5422(_0x3c5d31(0xd8)),await _0x1d5422(_0x3c5d31(0xa9)),await _0x1d5422(_0x3c5d31(0xa5)),await _0x1d5422(''),await _0x1d5422(_0x3c5d31(0xa6)),await _0x1d5422(''),await _0x1d5422('SYSTEM\x20INTEGRITY:\x2058%'),await _0x1d5422('MAINTENANCE\x20HAS\x20BEEN\x20NOTIFIED'),await _0x1d5422(''),await _0x1d5422(_0x3c5d31(0xe1)),await _0x1d5422(_0x3c5d31(0xa2)),await _0x1d5422(''),await _0x1d5422(_0x3c5d31(0x87)),await _0x1d5422(_0x3c5d31(0xcf)+_0x51ad22+'%'),await _0x1d5422('ANOMALY\x20DETECTED'),await _0x1d5422(''),await _0x1d5422('Type\x20\x27help\x27\x20for\x20commands.'),await _0x1d5422('');}async function _0x28a697(_0x7d33a7){const _0x4b5109=_0x309530;if(_0x7d33a7===_0x4b5109(0xd1))await _0x1d5422(_0x4b5109(0xcc)),await _0x1d5422('login,\x20logs,\x20nodes,\x20status,\x20archive,\x20shards,\x20users'),await _0x1d5422('');else{if(_0x7d33a7==='login'){let _0x4fba65=prompt(_0x4b5109(0xec));_0x4fba65===_0x4b5109(0xb7)?(_0x294032=!![],await _0x1d5422(_0x4b5109(0xe0)),await _0x1d5422('')):(await _0x1d5422(_0x4b5109(0xb9)),await _0x1d5422('\x20'));}else{if(_0x7d33a7===_0x4b5109(0xbd)){if(!_0x294032){await _0x1d5422(_0x4b5109(0xe5)),await _0x1d5422('');return;}await _0x1d5422(_0x4b5109(0xac)),await _0x1d5422(_0x4b5109(0xe3)),await _0x1d5422(_0x4b5109(0xd7)),await _0x1d5422('LOCATION:\x20████████\x20CHAMBER'),await _0x1d5422(_0x4b5109(0xd3)),await _0x1d5422(''),await _0x1d5422(_0x4b5109(0xab)),await _0x1d5422(_0x4b5109(0x9c)),await _0x1d5422(_0x4b5109(0x9e)),await _0x1d5422(_0x4b5109(0xb2)),await _0x1d5422(_0x4b5109(0xb2)),await _0x1d5422('');}else{if(_0x7d33a7===_0x4b5109(0xc6))await _0x1d5422(_0x4b5109(0xc0)),await _0x1d5422(_0x4b5109(0xa3)),await _0x1d5422(_0x4b5109(0xb3)),await _0x1d5422(_0x4b5109(0x94)),await _0x1d5422(_0x4b5109(0xe8)),await _0x1d5422(_0x4b5109(0xb0)),await _0x1d5422(_0x4b5109(0x99)),await _0x1d5422(_0x4b5109(0xc8)),await _0x1d5422(_0x4b5109(0xa8)+_0x51ad22+'%'),await _0x1d5422('');else{if(_0x7d33a7==='nodes')await _0x1d5422('TAPIO\x20LAND\x20NODE\x20MAP'),await _0x1d5422(_0x4b5109(0xce)),await _0x1d5422('');else{if(_0x7d33a7===_0x4b5109(0xe6))await _0x1d5422('ARCHIVE\x20LOCKED'),await _0x1d5422('');else{if(_0x7d33a7===_0x4b5109(0x8e))await _0x1d5422(_0x4b5109(0xcb)),await _0x1d5422(_0x4b5109(0x88)),await _0x1d5422(_0x4b5109(0xae)),await _0x1d5422(_0x4b5109(0x9b)),await _0x1d5422('');else{if(_0x7d33a7==='users')await _0x1d5422(_0x4b5109(0xbf)),await _0x1d5422(_0x4b5109(0xc4)),await _0x1d5422(_0x4b5109(0xe2)),await _0x1d5422('');else{if(_0x7d33a7===_0x4b5109(0xdd))await _0x1d5422(_0x4b5109(0xc7)),await _0x1d5422(_0x4b5109(0x9f)),await _0x1d5422(_0x4b5109(0xde)),await _0x1d5422('');else{if(_0x7d33a7===_0x4b5109(0xdb))await _0x1d5422(_0x4b5109(0xd2)),await _0x1d5422(_0x4b5109(0xd9)),await _0x1d5422(_0x4b5109(0xed)),await _0x1d5422(_0x4b5109(0xc5)),await _0x1d5422(_0x4b5109(0x95)),await _0x1d5422(_0x4b5109(0x85)),await _0x1d5422('');else{if(_0x7d33a7===_0x4b5109(0xee))await _0x1d5422(_0x4b5109(0x98)),await _0x1d5422(_0x4b5109(0xef)),await _0x1d5422(_0x4b5109(0x96)),await _0x1d5422('');else _0x7d33a7===_0x4b5109(0xc9)?(await _0x1d5422(_0x4b5109(0x89)),await _0x1d5422(_0x4b5109(0xe4)),await _0x1d5422(_0x4b5109(0xea)[_0x4b5109(0x91)](0x32)+'PLEASE.'),await _0x1d5422('')):(await _0x1d5422(_0x4b5109(0xb4)),await _0x1d5422(''));}}}}}}}}}}}_0x4d32e4['addEventListener'](_0x309530(0xda),function(_0x19fc72){const _0x3e80fb=_0x309530;if(_0x19fc72['key']===_0x3e80fb(0xeb)){let _0x756a7c=_0x4d32e4[_0x3e80fb(0x84)][_0x3e80fb(0x86)]()['trim']();_0x1d5422('>\x20'+_0x756a7c),_0x28a697(_0x756a7c),_0x4d32e4[_0x3e80fb(0x84)]='';}}),_0x5d5fad();}()));
+(function() {
+    // --- 1. INITIALIZE ASSETS ---
+    const alarm = new Audio('siren.mp3');
+    alarm.loop = true;
+    let inputBuffer = "";
+
+    // --- 3. THE REDIRECT CHECK ---
+    // If the user is banned, send them to the separate HTML page immediately.
+    if (localStorage.getItem('IRIS_BAN') === 'true') {
+        window.location.replace("access-denied.html");
+        return; 
+    }
+
+    // --- 4. ANTI-CHEAT PROTOCOLS ---
+    const selfDestruct = async () => {
+        localStorage.setItem('IRIS_BAN', 'true');
+        
+        // Immediate visual/audio feedback before the redirect kicks in
+        document.body.style.backgroundColor = "red";
+        document.body.innerHTML = '<h1 style="color:white; text-align:center; margin-top:20%; font-family:monospace;">SECURITY BREACH DETECTED<br>TERMINATING SESSION...</h1>';
+        
+        alarm.play().catch(() => {});
+        
+        // Wait 1.5 seconds so they hear the siren and feel the panic
+        await new Promise(res => setTimeout(res, 1500)); 
+        window.location.replace("access-denied.html");
+    };
+
+    // Inspector Size Guard: Detects if DevTools sidebar is open
+  // --- 4. THE DEAD MAN'S SWITCH (Live Detection) ---
+    let lastHeartbeat = performance.now();
+
+    // 1. The "Heartbeat" - This gets paused by the debugger
+    setInterval(() => {
+        lastHeartbeat = performance.now();
+        
+        // Classic debugger trigger to catch them if they try to step through
+        (function() { return false; })['constructor']('debugger')['call']();
+    }, 100);
+
+    // 2. The "Monitor" - This catches the pause
+    setInterval(() => {
+        const currentTime = performance.now();
+        
+        // If the gap is > 300ms, the 'Heartbeat' was paused by a debugger
+        if (currentTime - lastHeartbeat > 300) {
+            selfDestruct();
+        }
+
+        // Also check window size here for the "Pre-opened" catch
+        if (window.outerWidth - window.innerWidth > 160 || window.outerHeight - window.innerHeight > 160) {
+            selfDestruct();
+        }
+    }, 100);
+
+    // Block Right-Click and Common DevTools Shortcuts
+    document.addEventListener('contextmenu', e => e.preventDefault());
+    document.addEventListener('keydown', e => {
+        if (e.keyCode == 123 || (e.ctrlKey && e.shiftKey && (e.keyCode == 73 || e.keyCode == 74)) || (e.ctrlKey && e.keyCode == 85)) {
+            e.preventDefault();
+        }
+    });
+
+    // Debugger Trap: Triggers if they try to pause the script
+    setInterval(() => {
+        const start = performance.now();
+        (function() { return false; })['constructor']('debugger')['call']();
+        if (performance.now() - start > 100) selfDestruct();
+    }, 100);
+
+    // --- 5. TERMINAL LOGIC ---
+    const output = document.getElementById("output");
+    const input = document.getElementById("commandInput");
+    let loggedIn = false;
+    let sealIntegrity = 92;
+
+    const wait = () => new Promise(res => setTimeout(res, 500));
+
+    async function print(text) {
+        if(!output) return;
+        output.innerHTML += text + "<br>";
+        window.scrollTo(0, document.body.scrollHeight);
+        await wait();
+    }
+
+    async function boot() {
+        await print("BOOTING IRIS SYSTEM...");
+        await print("LOADING SECURITY MODULE...");
+        await print("LOADING ████ MONITORING...");
+        await print("LOADING ███████ CONTAINMENT...");
+        await print("");
+        await print("WARNING: UNKNOWN PROCESS DETECTED");
+        await print("");
+        await print("SYSTEM INTEGRITY: 58%");
+        await print("MAINTENANCE HAS BEEN NOTIFIED");
+        await print("");
+        await print("IRIS SECURITY INTERFACE v2.3");
+        await print("Tapio Land Monitoring System");
+        await print("");
+        await print("STATUS: ONLINE");
+        await print("████ INTEGRITY: " + sealIntegrity + "%");
+        await print("ANOMALY DETECTED");
+        await print("");
+        await print("Type 'help' for commands.");
+        await print("");
+    }
+
+    async function runCommand(cmd) {
+        if (cmd === "help") {
+            await print("AVAILABLE COMMANDS:");
+            await print("login, logs, nodes, status, archive, shards, users");
+            await print("");
+        } else if (cmd === "login") {
+            let password = prompt("ENTER ACCESS PASSWORD");
+            if (password === "ROOTSINTHESOIL") {
+                loggedIn = true;
+                await print("ACCESS GRANTED");
+                await print("");
+            } else {
+                await print("ACCESS DENIED");
+                await print(" ");
+            }
+        } else if (cmd === "logs") {
+            if (!loggedIn) {
+                await print("ACCESS RESTRICTED");
+                await print("");
+                return;
+            }
+            await print("LOG 02.11.26");
+            await print("SYSTEM SCAN COMPLETE");
+            await print("UNIDENTIFIED PRESENCE DETECTED");
+            await print("LOCATION: ████████ CHAMBER");
+            await print("ACTION: MONITOR");
+            await print("");
+            await print("LOG 02.18.26");
+            await print("██████ ACTIVITY DETECTED");
+            await print("ATTEMPTING ████████████");
+            await print("ERROR");
+            await print("ERROR");
+            await print("");
+        } else if (cmd === "status") {
+            await print("████ STATUS");
+            await print("████ 1: STABLE");
+            await print("████ 2: STABLE");
+            await print("████ 3: STABLE");
+            await print("████ 4: DEGRADED");
+            await print("████ 5: DEGRADED");
+            await print("████ 6: DEGRADED");
+            await print("████ 7: DEGRADED");
+            await print("TOTAL INTEGRITY: " + sealIntegrity + "%");
+            await print("");
+        } else if (cmd === "nodes") {
+            await print("TAPIO LAND NODE MAP");
+            await print("node441, node442, node443");
+            await print("");
+        } else if (cmd === "archive") {
+            await print("ARCHIVE LOCKED");
+            await print("");
+        } else if (cmd === "shards") {
+            await print("SHARD DATABASE");
+            await print("GREEN SHARD");
+            await print("Classification: ██████ Fragment");
+            await print("Origin: █████ Reserve");
+            await print("");
+        } else if (cmd === "users") {
+            await print("PLAYER WATCHLIST");
+            await print("bee_keeper — curious");
+            await print("███████ — investigating");
+            await print("");
+        } else if (cmd === "node441") {
+            await print("ACCESSING NODE 441...");
+            await print("MAINTENANCE CORRIDOR");
+            await print("12133433311212124421222421111333433131");
+            await print("");
+        } else if (cmd === "node442") {
+            await print("ACCESSING NODE 442...");
+            await print("MAINTENANCE CORRIDOR KEY");
+            await print("1 = 45:315 0:270");
+            await print("2 = 90:270 315:225 135:180 225:270 0:315");
+            await print("3 = 45:225 45:180 90:180 0:315");
+            await print("4 = 180:0 315:270 90:45 135:225");
+            await print("");
+        } else if (cmd === "node443") {
+            await print("ACCESSING NODE 443...");
+            await print("KEY REMINDER");
+            await print("REMEMBER YOUR PAST, THROUGH EVERY MINUTE, THEN EVERY HOUR. THEN LOOK TO THE FUTURE.");
+            await print("");
+        } else if (cmd === "node666") {
+            await print("AC ES I G N DE 66 . .");
+            await print("HELLSCAPE");
+            await print("SAVE US. ".repeat(50) + "PLEASE.");
+            await print("");
+        } else {
+            await print("UNKNOWN COMMAND");
+            await print("");
+        }
+    }
+
+    input.addEventListener("keydown", function(e) {
+        if (e.key === "Enter") {
+            let cmd = input.value.toLowerCase().trim();
+            print("> " + cmd);
+            runCommand(cmd);
+            input.value = "";
+        }
+    });
+
+    boot();
+})();
