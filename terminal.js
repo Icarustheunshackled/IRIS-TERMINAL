@@ -76,7 +76,8 @@
         await print("SYSTEM INTEGRITY: 58%");
         await print("MAINTENANCE HAS BEEN NOTIFIED");
         await print("");
-        await print("IRIS SECURITY INTERFACE v2.3");
+        await print("UPDATE CONFIRMED...")
+        await print("IRIS SECURITY INTERFACE v3.0");
         await print("Tapio Land Monitoring System");
         await print("");
         await print("STATUS: ONLINE");
