@@ -23,23 +23,30 @@
         window.location.replace("access-denied.html");
     };
 
-    // --- 4. RELIABLE WINDOW GUARD ---
+    // --- 4. STABLE WINDOW GUARD ---
+    let resizeTimeout;
     const checkDimensions = () => {
-        const threshold = 160;
-        const widthDiff = window.outerWidth - window.innerWidth;
-        const heightDiff = window.outerHeight - window.innerHeight;
+        clearTimeout(resizeTimeout);
+        
+        // Wait 100ms after the resize stops to check
+        // This prevents "glitch bans" during rapid UI shifts
+        resizeTimeout = setTimeout(() => {
+            const threshold = 200; // Increased threshold for safety
+            const widthDiff = window.outerWidth - window.innerWidth;
+            const heightDiff = window.outerHeight - window.innerHeight;
 
-        // If the gap between the window and the content is too big, they're peeking.
-        if (widthDiff > threshold || heightDiff > threshold) {
-            selfDestruct();
-        }
+            // Logically, dev tools are usually > 250px. 
+            // Small shifts (like scrollbars or UI hiding) are ignored.
+            if (widthDiff > threshold || heightDiff > threshold) {
+                // Final check: is the window actually small enough to be suspicious?
+                if (window.innerWidth < (screen.width - threshold)) {
+                    selfDestruct();
+                }
+            }
+        }, 100);
     };
 
-    // Trigger only when the window actually changes
     window.addEventListener('resize', checkDimensions);
-
-    // Run one check on load to catch people who have DevTools already open
-    checkDimensions();
 
     // Block Right-Click and Common DevTools Shortcuts
     document.addEventListener('contextmenu', e => e.preventDefault());
