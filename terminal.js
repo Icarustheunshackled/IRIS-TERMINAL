@@ -152,7 +152,7 @@
         } else if (cmd === "node441") {
             await print("ACCESSING NODE 441...");
             await print("MAINTENANCE CORRIDOR");
-            await print("12133433311212124421222421111333433131");
+            await print("21242122113121133134333111331111242121");
             await print("");
         } else if (cmd === "node442") {
             await print("ACCESSING NODE 442...");
