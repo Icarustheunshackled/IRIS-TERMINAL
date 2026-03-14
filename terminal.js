@@ -95,7 +95,7 @@
             await print("");
         } else if (cmd === "login") {
             let password = prompt("ENTER ACCESS PASSWORD");
-            if (password === "ROOTSINTHESOIL") {
+            if (password === "placeholder and now you are banned haha") {
                 loggedIn = true;
                 await print("ACCESS GRANTED");
                 await print("");
