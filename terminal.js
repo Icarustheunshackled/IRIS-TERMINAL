@@ -17,7 +17,7 @@
 
     // --- 2. THE REDIRECT CHECK ---
     if (localStorage.getItem('IRIS_BAN') === 'true') {
-        window.location.replace("access-denied.html");
+        window.location.replace("unlocker/access-denied.html");
         return; 
     }
 
@@ -32,7 +32,7 @@
         alarm.play().catch(() => {});
         
         await new Promise(res => setTimeout(res, 1500)); 
-        window.location.replace("access-denied.html");
+        window.location.replace("unlock/access-denied.html");
     };
 
     setInterval(() => {
