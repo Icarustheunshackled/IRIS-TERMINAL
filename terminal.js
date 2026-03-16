@@ -32,7 +32,7 @@
         alarm.play().catch(() => {});
         
         await new Promise(res => setTimeout(res, 1500)); 
-        window.location.replace("unlock/access-denied.html");
+        window.location.replace("unlocker/access-denied.html");
     };
 
     setInterval(() => {
