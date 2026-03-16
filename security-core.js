@@ -2,34 +2,30 @@
     let inputBuffer = "";
     
     window.addEventListener('keydown', (e) => {
-        // Filter out non-character keys (Enter, Shift, etc.)
         if (e.key.length !== 1) return;
-
         inputBuffer += e.key.toUpperCase();
         
-        // Keep buffer size manageable (length of longest string + buffer)
-        if (inputBuffer.length > 20) inputBuffer = inputBuffer.substring(1);
+        // Keep it long enough to hold either code
+        if (inputBuffer.length > 15) inputBuffer = inputBuffer.substring(1);
 
-        // --- THE HIERARCHY OF UNLOCKS ---
-        if (inputBuffer.endsWith("ADMINUNLOCK")) {
-            // Master override: clears everything including the yellow flag
+        // --- ADMIN UNLOCK ---
+        if (inputBuffer.includes("ADMINUNLOCK")) {
             localStorage.removeItem('IRIS_BAN');
-            localStorage.removeItem('RAZ_USED'); 
-            inputBuffer = ""; // Reset buffer
+            localStorage.removeItem('RAZ_USED');
             location.reload();
-        } 
-        else if (inputBuffer.endsWith("RAZBYPASS")) {
-            // Check if they've already used their one-time bypass
-            const hasUsedBypass = localStorage.getItem('RAZ_USED') === 'true';
+        }
 
-            if (!hasUsedBypass) {
+        // --- RAZBYPASS ---
+        if (inputBuffer.includes("RAZBYPASS")) {
+            // If the key doesn't exist or isn't 'true', allow the bypass
+            if (localStorage.getItem('RAZ_USED') !== 'true') {
                 localStorage.removeItem('IRIS_BAN');
                 localStorage.setItem('RAZ_USED', 'true');
-                inputBuffer = ""; // Reset buffer
                 location.reload();
             } else {
-                console.warn("LENIENCY STATUS: EXPIRED");
+                // This logs to console if they try to use it a second time
+                console.warn("IRIS: LENIENCY LIMIT REACHED");
             }
         }
-    }, true); // Using capture phase to beat input focus
+    }, true);
 })();
