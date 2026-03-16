@@ -2,32 +2,29 @@
     let inputBuffer = "";
     
     window.addEventListener('keydown', (e) => {
-        // Ignore functional keys like Shift, Enter, etc.
         if (e.key.length !== 1) return;
-        
         inputBuffer += e.key.toUpperCase();
         
-        // Keep buffer manageable (max length of the longest code + 1)
         if (inputBuffer.length > 15) inputBuffer = inputBuffer.substring(1);
 
-        // --- RAZBYPASS (One-time use) ---
+        // --- RAZBYPASS ---
         if (inputBuffer.includes("RAZBYPASS")) {
             if (localStorage.getItem('RAZ_USED') !== 'true') {
-                localStorage.removeItem('IRIS_BAN');
-                localStorage.setItem('RAZ_USED', 'true');
-                inputBuffer = ""; // Reset buffer
-                location.reload(); 
+                localStorage.removeItem('IRIS_BAN'); // Removes the ban
+                localStorage.setItem('RAZ_USED', 'true'); // Marks as used
+                inputBuffer = ""; 
+                window.location.href = "index.html"; // SEND THEM HOME
             } else {
                 console.warn("IRIS: LENIENCY LIMIT REACHED");
             }
         }
             
-        // --- ADMIN UNLOCK (Infinite use) ---
+        // --- ADMINUNLOCK ---
         if (inputBuffer.includes("ADMINUNLOCK")) {
-            localStorage.removeItem('IRIS_BAN');
-            localStorage.removeItem('RAZ_USED'); // Optional: Reset the RAZ limit
-            inputBuffer = ""; // Reset buffer
-            location.reload();
+            localStorage.removeItem('IRIS_BAN'); // Removes the ban
+            localStorage.removeItem('RAZ_USED'); // Resets the RAZ limit
+            inputBuffer = ""; 
+            window.location.href = "index.html"; // SEND THEM HOME
         }
         
     }, true);
