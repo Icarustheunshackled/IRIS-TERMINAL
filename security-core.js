@@ -1,1 +1,32 @@
-(function(_0x15a9c4,_0x3f7d1c){const _0xc03642=_0x32da,_0x297468=_0x15a9c4();while(!![]){try{const _0x951c36=-parseInt(_0xc03642(0x1e6))/0x1+-parseInt(_0xc03642(0x1da))/0x2+-parseInt(_0xc03642(0x1dc))/0x3*(parseInt(_0xc03642(0x1db))/0x4)+-parseInt(_0xc03642(0x1de))/0x5+parseInt(_0xc03642(0x1d6))/0x6*(parseInt(_0xc03642(0x1d8))/0x7)+-parseInt(_0xc03642(0x1e2))/0x8*(parseInt(_0xc03642(0x1e3))/0x9)+-parseInt(_0xc03642(0x1d9))/0xa*(-parseInt(_0xc03642(0x1d5))/0xb);if(_0x951c36===_0x3f7d1c)break;else _0x297468['push'](_0x297468['shift']());}catch(_0x4c1653){_0x297468['push'](_0x297468['shift']());}}}(_0xf22d,0x3ec72),(function(){const _0x4fb683=_0x32da;let _0x32be20='';const _0x59884b='ADMINUNLOCK';window[_0x4fb683(0x1e0)](_0x4fb683(0x1dd),_0xec41f9=>{const _0x1e7e8f=_0x4fb683;_0x32be20+=_0xec41f9[_0x1e7e8f(0x1df)][_0x1e7e8f(0x1e4)]();_0x32be20['includes'](_0x59884b)&&(localStorage[_0x1e7e8f(0x1e1)](_0x1e7e8f(0x1d7)),console[_0x1e7e8f(0x1e5)]('%c\x20[SYSTEM]\x20MASTER\x20KEY\x20ACCEPTED.\x20ACCESS\x20RESTORED.','color:\x20#0f0;\x20font-weight:\x20bold;'),setTimeout(()=>{location['reload']();},0x3e8));if(_0x32be20['length']>0x14)_0x32be20=_0x32be20['substring'](0xa);});}()));function _0x32da(_0x224290,_0x4e8cc1){_0x224290=_0x224290-0x1d5;const _0xf22df8=_0xf22d();let _0x32da1b=_0xf22df8[_0x224290];return _0x32da1b;}function _0xf22d(){const _0x12cd78=['78MAkExc','IRIS_BAN','9625iWzEvB','4907410MmzFno','40914olIOoW','40jOIxDv','18669WinbYl','keydown','2094865PgfKKJ','key','addEventListener','removeItem','8mjeLhE','4461183YOGyNU','toUpperCase','log','235613fmGBHS','33lvZIcI'];_0xf22d=function(){return _0x12cd78;};return _0xf22d();}
+(function() {
+    let inputBuffer = "";
+    
+    window.addEventListener('keydown', (e) => {
+        // Capture keys and keep the buffer manageable
+        inputBuffer += e.key.toUpperCase();
+        if (inputBuffer.length > 25) inputBuffer = inputBuffer.substring(10);
+
+        // --- MASTER ADMIN UNLOCK (Permanent) ---
+        // Clears everything: the ban and the bypass usage history.
+        if (inputBuffer.includes("ADMINUNLOCK")) {
+            localStorage.removeItem('IRIS_BAN');
+            localStorage.removeItem('RAZ_USED'); 
+            console.log("%c [SYS] TOTAL SYSTEM RESET: AUTHORIZED", "color: #00ff00; font-weight: bold;");
+            location.reload();
+        }
+
+        // --- RAZBYPASS (One-time Leniency) ---
+        // Clears the ban but marks the account as "Under Observation"
+        if (inputBuffer.includes("RAZBYPASS")) {
+            if (localStorage.getItem('RAZ_USED') === 'true') {
+                console.warn(" [!] ERROR: SECURITY LENIENCY ALREADY EXPENDED.");
+                // Optional: Trigger a mini-siren or visual flash here
+            } else {
+                localStorage.removeItem('IRIS_BAN');
+                localStorage.setItem('RAZ_USED', 'true'); 
+                console.log("%c [SYS] BYPASS ACCEPTED. ACCOUNT FLAGGED: CAUTIOUS", "color: #ffcc00;");
+                location.reload();
+            }
+        }
+    });
+})();
