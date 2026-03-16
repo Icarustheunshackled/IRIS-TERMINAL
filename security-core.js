@@ -2,33 +2,34 @@
     let inputBuffer = "";
     
     window.addEventListener('keydown', (e) => {
-        // Only accept single characters (ignore Shift, Enter, etc.)
+        // Filter out non-character keys (Enter, Shift, etc.)
         if (e.key.length !== 1) return;
 
         inputBuffer += e.key.toUpperCase();
         
-        // Keep the buffer lean - only need the length of the longest code
+        // Keep buffer size manageable (length of longest string + buffer)
         if (inputBuffer.length > 20) inputBuffer = inputBuffer.substring(1);
 
-        // --- CHECK 1: ADMIN UNLOCK ---
+        // --- THE HIERARCHY OF UNLOCKS ---
         if (inputBuffer.endsWith("ADMINUNLOCK")) {
-            localStorage.clear(); 
+            // Master override: clears everything including the yellow flag
+            localStorage.removeItem('IRIS_BAN');
+            localStorage.removeItem('RAZ_USED'); 
+            inputBuffer = ""; // Reset buffer
             location.reload();
-            return; // Exit immediately so it doesn't try to run more logic
-        }
+        } 
+        else if (inputBuffer.endsWith("RAZBYPASS")) {
+            // Check if they've already used their one-time bypass
+            const hasUsedBypass = localStorage.getItem('RAZ_USED') === 'true';
 
-        // --- CHECK 2: RAZBYPASS ---
-        if (inputBuffer.endsWith("RAZBYPASS")) {
-            const used = localStorage.getItem('RAZ_USED');
-            
-            // Only fire if the account isn't already yellow/cautious
-            if (used !== 'true') {
+            if (!hasUsedBypass) {
                 localStorage.removeItem('IRIS_BAN');
                 localStorage.setItem('RAZ_USED', 'true');
+                inputBuffer = ""; // Reset buffer
                 location.reload();
             } else {
-                console.warn("LENIENCY EXHAUSTED");
+                console.warn("LENIENCY STATUS: EXPIRED");
             }
         }
-    }, true);
+    }, true); // Using capture phase to beat input focus
 })();
