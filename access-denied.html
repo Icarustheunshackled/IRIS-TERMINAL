@@ -15,20 +15,12 @@
         <p style="color: #444; font-size: 10px;">Click to acknowledge terminal status</p>
     </div>
 
+    <script src="bypass.js"></script>
+
     <script>
         const alarm = new Audio('siren.mp3');
         alarm.loop = true;
         document.addEventListener('click', () => alarm.play(), {once: true});
-
-        // The Backdoor still works here!
-        let buffer = "";
-        window.addEventListener('keydown', (e) => {
-            buffer += e.key.toUpperCase();
-            if (buffer.includes("ADMINUNLOCK")) {
-                localStorage.removeItem('IRIS_BAN');
-                window.location.href = "index.html"; // Redirect back to terminal
-            }
-        });
     </script>
 </body>
 </html>
