@@ -13,7 +13,7 @@
                 localStorage.removeItem('IRIS_BAN'); // Removes the ban
                 localStorage.setItem('RAZ_USED', 'true'); // Marks as used
                 inputBuffer = ""; 
-                window.location.replace("../index.html");
+                window.location.href = "../index.html";
             } else {
                 console.warn("IRIS: LENIENCY LIMIT REACHED");
             }
@@ -24,7 +24,7 @@
             localStorage.removeItem('IRIS_BAN'); // Removes the ban
             localStorage.removeItem('RAZ_USED'); // Resets the RAZ limit
             inputBuffer = ""; 
-            window.location.replace("../index.html");
+            window.location.href = "../index.html";
         }
         
     }, true);
