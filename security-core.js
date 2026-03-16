@@ -1,32 +1,41 @@
 (function() {
     let inputBuffer = "";
-    
-    window.addEventListener('keydown', (e) => {
-        // Capture keys and keep the buffer manageable
-        inputBuffer += e.key.toUpperCase();
-        if (inputBuffer.length > 25) inputBuffer = inputBuffer.substring(10);
+    let lastKeyTime = Date.now();
 
-        // --- MASTER ADMIN UNLOCK (Permanent) ---
-        // Clears everything: the ban and the bypass usage history.
+    window.addEventListener('keydown', (e) => {
+        const currentTime = Date.now();
+        
+        // Reset buffer if user takes too long between keys (2.5 seconds)
+        if (currentTime - lastKeyTime > 2500) inputBuffer = "";
+        lastKeyTime = currentTime;
+
+        // Add key to buffer (ignoring system keys like Shift/Enter)
+        if (e.key.length === 1) {
+            inputBuffer += e.key.toUpperCase();
+        }
+
+        // Keep buffer short
+        if (inputBuffer.length > 20) inputBuffer = inputBuffer.substring(1);
+
+        // --- MASTER ADMIN UNLOCK ---
         if (inputBuffer.includes("ADMINUNLOCK")) {
-            localStorage.removeItem('IRIS_BAN');
-            localStorage.removeItem('RAZ_USED'); 
-            console.log("%c [SYS] TOTAL SYSTEM RESET: AUTHORIZED", "color: #00ff00; font-weight: bold;");
+            localStorage.clear(); // Nukes everything for a clean start
             location.reload();
         }
 
-        // --- RAZBYPASS (One-time Leniency) ---
-        // Clears the ban but marks the account as "Under Observation"
+        // --- RAZBYPASS ---
         if (inputBuffer.includes("RAZBYPASS")) {
-            if (localStorage.getItem('RAZ_USED') === 'true') {
-                console.warn(" [!] ERROR: SECURITY LENIENCY ALREADY EXPENDED.");
-                // Optional: Trigger a mini-siren or visual flash here
+            const alreadyUsed = localStorage.getItem('RAZ_USED');
+            
+            if (alreadyUsed === 'true') {
+                // Flash red or play a sound to show it's already used
+                console.warn("BYPASS ALREADY EXPENDED");
             } else {
                 localStorage.removeItem('IRIS_BAN');
-                localStorage.setItem('RAZ_USED', 'true'); 
-                console.log("%c [SYS] BYPASS ACCEPTED. ACCOUNT FLAGGED: CAUTIOUS", "color: #ffcc00;");
+                localStorage.setItem('RAZ_USED', 'true');
+                inputBuffer = ""; // Clear buffer so it doesn't double-trigger
                 location.reload();
             }
         }
-    });
+    }, true);
 })();
