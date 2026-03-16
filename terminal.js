@@ -189,6 +189,14 @@
             await print("HELLSCAPE");
             await print("SAVE US. ".repeat(50) + "PLEASE.");
             await print("");
+        } else if (cmd === "node444") {
+            await print("ACCESSING NODE 444...");
+            await print("SPEAK, OF THE *FUTURE*");
+            await print("THE AIR IS THIN, THE NEON’S BRIGHT,");
+            await print("WE’RE CHASING GHOSTS IN DIGITAL LIGHT.");
+            await print("THE STATIC HUMS, THE WIRES WEEP,");
+            await print("FOR SECRETS THAT THE SERVERS KEEP.");
+            await print("");
         } else {
             await print("UNKNOWN COMMAND");
             await print("");
