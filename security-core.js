@@ -2,31 +2,33 @@
     let inputBuffer = "";
     
     window.addEventListener('keydown', (e) => {
+        // Ignore functional keys like Shift, Enter, etc.
         if (e.key.length !== 1) return;
+        
         inputBuffer += e.key.toUpperCase();
         
-        // Keep it long enough to hold either code
+        // Keep buffer manageable (max length of the longest code + 1)
         if (inputBuffer.length > 15) inputBuffer = inputBuffer.substring(1);
 
-        // --- RAZBYPASS ---
+        // --- RAZBYPASS (One-time use) ---
         if (inputBuffer.includes("RAZBYPASS")) {
-            // If the key doesn't exist or isn't 'true', allow the bypass
             if (localStorage.getItem('RAZ_USED') !== 'true') {
                 localStorage.removeItem('IRIS_BAN');
                 localStorage.setItem('RAZ_USED', 'true');
-                location.reload();
+                inputBuffer = ""; // Reset buffer
+                location.reload(); 
             } else {
-                // This logs to console if they try to use it a second time
                 console.warn("IRIS: LENIENCY LIMIT REACHED");
             }
+        }
             
-        // --- ADMIN UNLOCK ---
+        // --- ADMIN UNLOCK (Infinite use) ---
         if (inputBuffer.includes("ADMINUNLOCK")) {
             localStorage.removeItem('IRIS_BAN');
-            localStorage.removeItem('RAZ_USED');
+            localStorage.removeItem('RAZ_USED'); // Optional: Reset the RAZ limit
+            inputBuffer = ""; // Reset buffer
             location.reload();
         }
         
-        }
     }, true);
 })();
