@@ -1,5 +1,17 @@
 (function() {
     // --- 1. INITIALIZE ASSETS ---
+    const isCautious = localStorage.getItem('RAZ_USED') === 'true';
+
+    if (isCautious) {
+        const yellow = "#ffcc00";
+        document.body.style.color = yellow;
+        const inputField = document.getElementById("commandInput");
+        if (inputField) {
+            inputField.style.color = yellow;
+            inputField.style.borderColor = yellow;
+            inputField.style.outline = "none"; // Keeps it clean
+        }
+    }
     const alarm = new Audio('siren.mp3');
     alarm.loop = true;
 
@@ -68,6 +80,10 @@
     async function boot() {
         await print("BOOTING IRIS SYSTEM...");
         await print("LOADING SECURITY MODULE...");
+        if (isCautious) {
+        await print("<br><span style='color:black; background:#ffcc00; padding: 0 5px;'> [!] WARNING: ACCOUNT UNDER OBSERVATION </span>");
+        await print("<span style='color:#ffcc00;'> [!] SECURITY LENIENCY EXPENDED </span><br>");
+        }
         await print("LOADING ████ MONITORING...");
         await print("LOADING ███████ CONTAINMENT...");
         await print("");
