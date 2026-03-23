@@ -98,7 +98,8 @@
         await print("");
         await print("STATUS: ONLINE");
         await print("████ INTEGRITY: " + sealIntegrity + "%");
-        document.body.style.filter = "invert(0.01)";
+        document.body.style.filter = "invert(1)";
+        document.body.style.filter = "invert(1)";
         await print("ANOMALY DETECTED");
         await print("");
         await print("Type 'help' for commands.");
