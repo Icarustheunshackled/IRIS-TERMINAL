@@ -66,7 +66,7 @@
     const output = document.getElementById("output");
     const input = document.getElementById("commandInput");
     let loggedIn = false;
-    let sealIntegrity = 92;
+    let sealIntegrity = 91;
 
     const wait = () => new Promise(res => setTimeout(res, 500));
 
@@ -126,18 +126,7 @@
                 await print("");
                 return;
             }
-            await print("LOG 02.11.26");
-            await print("SYSTEM SCAN COMPLETE");
-            await print("UNIDENTIFIED PRESENCE DETECTED");
-            await print("LOCATION: ████████ CHAMBER");
-            await print("ACTION: MONITOR");
-            await print("");
-            await print("LOG 02.18.26");
-            await print("██████ ACTIVITY DETECTED");
-            await print("ATTEMPTING ████████████");
-            await print("ERROR");
-            await print("ERROR");
-            await print("");
+            await print("DATA CORRUPTED");
         } else if (cmd === "status") {
             await print("████ STATUS");
             await print("████ 1: STABLE");
@@ -165,8 +154,7 @@
         } else if (cmd === "users") {
             await print("PLAYER WATCHLIST");
             await print("bee_keeper — CURIOUS");
-            await print("███████ — LOCATED");
-            await print("leader — ODD");
+            await print("███████ — INVESTIGATING");
         } else if (cmd === "node441") {
             await print("ACCESSING NODE 441...");
             await print("MAINTENANCE CORRIDOR");
@@ -194,18 +182,6 @@
             await print("WE’RE CHASING GHOSTS IN DIGITAL LIGHT.");
             await print("THE STATIC HUMS, THE WIRES WEEP,");
             await print("FOR SECRETS THAT THE SERVERS KEEP.");
-            await print("");
-        } else if (cmd === "") {
-            await print("");
-        } else if (cmd === "") {
-            await print("");
-        } else if (cmd === "") {
-            await print("");
-        } else if (cmd === "") {
-            await print("");
-        } else if (cmd === "") {
-            await print("");
-        } else if (cmd === "") {
             await print("");
         } else if (cmd === "") {
             await print("");
