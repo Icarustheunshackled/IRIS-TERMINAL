@@ -93,13 +93,11 @@
         await print("MAINTENANCE HAS BEEN NOTIFIED");
         await print("");
         await print("UPDATE CONFIRMED...")
-        await print("IRIS SECURITY INTERFACE v3.0");
+        await print("IRIS SECURITY INTERFACE v3.1");
         await print("Tapio Land Monitoring System");
         await print("");
         await print("STATUS: ONLINE");
         await print("████ INTEGRITY: " + sealIntegrity + "%");
-        document.body.style.filter = "invert(1)";
-        document.body.style.filter = "invert(0)";
         await print("ANOMALY DETECTED");
         await print("");
         await print("Type 'help' for commands.");
@@ -113,16 +111,20 @@
             await print("");
         } else if (cmd === "login") {
             let password = prompt("ENTER ACCESS PASSWORD");
-            if (password === "placeholder and now you are banned haha") {
-                loggedIn = true;
+            if (password === "lkzrywod") {
+                RazLoggedIn = true;
+                await print("ACCESS GRANTED");
+                await print("");
+            if (password === "") {
+                BTLoggedIn = true;
                 await print("ACCESS GRANTED");
                 await print("");
             } else {
                 await print("ACCESS DENIED");
                 await print(" ");
             }
-        } else if (cmd === "logs") {
-            if (!loggedIn) {
+        } else if (cmd === "audit log") {
+            if (!RazLoggedIn) {
                 await print("ACCESS RESTRICTED");
                 await print("");
                 return;
