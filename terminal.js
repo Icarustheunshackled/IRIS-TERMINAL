@@ -65,7 +65,8 @@
     // --- 5. TERMINAL LOGIC ---
     const output = document.getElementById("output");
     const input = document.getElementById("commandInput");
-    let loggedIn = false;
+    let RazLoggedIn = false;
+    let BTLoggedIn = false;
     let sealIntegrity = 91;
 
     const wait = () => new Promise(res => setTimeout(res, 500));
