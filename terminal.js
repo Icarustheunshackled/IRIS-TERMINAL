@@ -65,7 +65,7 @@
     // --- 5. TERMINAL LOGIC ---
     const output = document.getElementById("output");
     const input = document.getElementById("commandInput");
-    let RazLoggedIn = false;
+    let loggedIn = false;
     let BTLoggedIn = false;
     let sealIntegrity = 91;
 
@@ -113,7 +113,7 @@
         } else if (cmd === "login") {
             let password = prompt("ENTER ACCESS PASSWORD");
             if (password === "lkzrywod") {
-                RazLoggedIn = true;
+                loggedIn = true;
                 await print("ACCESS GRANTED");
                 await print("");
             if (password === "") {
