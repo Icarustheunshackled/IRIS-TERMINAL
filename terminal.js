@@ -66,7 +66,6 @@
     const output = document.getElementById("output");
     const input = document.getElementById("commandInput");
     let loggedIn = false;
-    let BTLoggedIn = false;
     let sealIntegrity = 91;
 
     const wait = () => new Promise(res => setTimeout(res, 500));
@@ -113,7 +112,7 @@
         } else if (cmd === "login") {
             let password = prompt("ENTER ACCESS PASSWORD");
             if (password === "lkzrywod") {
-                loggedIn = true;
+                RazLoggedIn = true;
                 await print("ACCESS GRANTED");
                 await print("");
             if (password === "") {
