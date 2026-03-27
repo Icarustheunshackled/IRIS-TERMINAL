@@ -212,4 +212,5 @@
             await print("UNKNOWN COMMAND");
             await print("");
         }
+        boot();
     }
