@@ -24,13 +24,13 @@
     // --- 3. ANTI-CHEAT PROTOCOLS ---
     const selfDestruct = async () => {
         localStorage.setItem('IRIS_BAN', 'true');
-        
+
         // Immediate visual/audio feedback
         document.body.style.backgroundColor = "red";
         document.body.innerHTML = '<h1 style="color:white; text-align:center; margin-top:20%; font-family:monospace;">SECURITY BREACH DETECTED<br>TERMINATING SESSION...</h1>';
-        
+
         alarm.play().catch(() => {});
-        
+
         await new Promise(res => setTimeout(res, 1500)); 
         window.location.replace("unlocker/access-denied.html");
     };
@@ -66,7 +66,7 @@
     const output = document.getElementById("output");
     const input = document.getElementById("commandInput");
     let loggedIn = false;
-    let sealIntegrity = 91;
+    let sealIntegrity = 92;
 
     const wait = () => new Promise(res => setTimeout(res, 500));
 
@@ -89,11 +89,11 @@
         await print("");
         await print("WARNING: UNKNOWN PROCESS DETECTED");
         await print("");
-        await print("SYSTEM INTEGRITY: 57%");
+        await print("SYSTEM INTEGRITY: 49%");
         await print("MAINTENANCE HAS BEEN NOTIFIED");
         await print("");
         await print("UPDATE CONFIRMED...")
-        await print("IRIS SECURITY INTERFACE v3.1");
+        await print("IRIS SECURITY INTERFACE v3.0");
         await print("Tapio Land Monitoring System");
         await print("");
         await print("STATUS: ONLINE");
@@ -111,25 +111,32 @@
             await print("");
         } else if (cmd === "login") {
             let password = prompt("ENTER ACCESS PASSWORD");
-            if (password === "lkzrywod") {
-                RazLoggedIn = true;
-                await print("ACCESS GRANTED");
-                await print("");
-            if (password === "") {
-                BTLoggedIn = true;
+            if (password === "placeholder and now you are banned haha") {
+                loggedIn = true;
                 await print("ACCESS GRANTED");
                 await print("");
             } else {
                 await print("ACCESS DENIED");
                 await print(" ");
             }
-        } else if (cmd === "audit log") {
-            if (!RazLoggedIn) {
+        } else if (cmd === "logs") {
+            if (!loggedIn) {
                 await print("ACCESS RESTRICTED");
                 await print("");
                 return;
             }
-            await print("DATA CORRUPTED");
+            await print("LOG 02.11.26");
+            await print("SYSTEM SCAN COMPLETE");
+            await print("UNIDENTIFIED PRESENCE DETECTED");
+            await print("LOCATION: ████████ CHAMBER");
+            await print("ACTION: MONITOR");
+            await print("");
+            await print("LOG 02.18.26");
+            await print("██████ ACTIVITY DETECTED");
+            await print("ATTEMPTING ████████████");
+            await print("ERROR");
+            await print("ERROR");
+            await print("");
         } else if (cmd === "status") {
             await print("████ STATUS");
             await print("████ 1: STABLE");
@@ -142,6 +149,7 @@
             await print("TOTAL INTEGRITY: " + sealIntegrity + "%");
             await print("");
         } else if (cmd === "nodes") {
+            await print("TAPIO LAND NODE MAP");
             await print("TAPIO LAND MAINTENANCE NODE MAP");
             await print("node441, node442, node443");
             await print("");
@@ -155,9 +163,9 @@
             await print("Origin: █████ Reserve");
             await print("");
         } else if (cmd === "users") {
-            await print("PLAYER WATCHLIST");
             await print("bee_keeper — CURIOUS");
-            await print("███████ — INVESTIGATING");
+            await print("███████ — LOCATED");
+            await print("leader — ODD");
         } else if (cmd === "node441") {
             await print("ACCESSING NODE 441...");
             await print("MAINTENANCE CORRIDOR");
@@ -188,20 +196,20 @@
             await print("");
         } else if (cmd === "") {
             await print("");
+        } else if (cmd === "") {
+            await print("");
+        } else if (cmd === "") {
+            await print("");
+        } else if (cmd === "") {
+            await print("");
+        } else if (cmd === "") {
+            await print("");
+        } else if (cmd === "") {
+            await print("");
+        } else if (cmd === "") {
+            await print("");
         } else {
             await print("UNKNOWN COMMAND");
             await print("");
         }
     }
-
-    input.addEventListener("keydown", function(e) {
-        if (e.key === "Enter") {
-            let cmd = input.value.toLowerCase().trim();
-            print("> " + cmd);
-            runCommand(cmd);
-            input.value = "";
-        }
-    });
-
-    boot();
-})();
