@@ -89,7 +89,7 @@
         await print("");
         await print("WARNING: UNKNOWN PROCESS DETECTED");
         await print("");
-        await print("SYSTEM INTEGRITY: 49%");
+        await print("SYSTEM INTEGRITY: 48%");
         await print("MAINTENANCE HAS BEEN NOTIFIED");
         await print("");
         await print("UPDATE CONFIRMED...")
@@ -125,18 +125,7 @@
                 await print("");
                 return;
             }
-            await print("LOG 02.11.26");
-            await print("SYSTEM SCAN COMPLETE");
-            await print("UNIDENTIFIED PRESENCE DETECTED");
-            await print("LOCATION: ████████ CHAMBER");
-            await print("ACTION: MONITOR");
-            await print("");
-            await print("LOG 02.18.26");
-            await print("██████ ACTIVITY DETECTED");
-            await print("ATTEMPTING ████████████");
-            await print("ERROR");
-            await print("ERROR");
-            await print("");
+            await print("DATA CORRUPTED");
         } else if (cmd === "status") {
             await print("████ STATUS");
             await print("████ 1: STABLE");
@@ -149,8 +138,7 @@
             await print("TOTAL INTEGRITY: " + sealIntegrity + "%");
             await print("");
         } else if (cmd === "nodes") {
-            await print("TAPIO LAND NODE MAP");
-            await print("TAPIO LAND MAINTENANCE NODE MAP");
+            await print("MAINTENANCE NODE MAP");
             await print("node441, node442, node443");
             await print("");
         } else if (cmd === "archive") {
@@ -163,9 +151,10 @@
             await print("Origin: █████ Reserve");
             await print("");
         } else if (cmd === "users") {
-            await print("bee_keeper — CURIOUS");
-            await print("███████ — LOCATED");
-            await print("leader — ODD");
+            await print("PLAYER WATCHLIST");
+            await print("bee_keeper — curious");
+            await print("███████ — investigating");
+            await print("");
         } else if (cmd === "node441") {
             await print("ACCESSING NODE 441...");
             await print("MAINTENANCE CORRIDOR");
@@ -185,7 +174,10 @@
             await print("REMEMBER YOUR PAST, THROUGH EVERY MINUTE, THEN EVERY HOUR. THEN LOOK TO THE FUTURE.");
             await print("");
         } else if (cmd === "node666") {
-            await print("ACCESS DENIED");
+            await print("AC ES I G N DE 66 . .");
+            await print("HELLSCAPE");
+            await print("SAVE US. ".repeat(50) + "PLEASE.");
+            await print("");
         } else if (cmd === "node444") {
             await print("ACCESSING NODE 444...");
             await print("SPEAK, OF THE *FUTURE*");
@@ -194,23 +186,20 @@
             await print("THE STATIC HUMS, THE WIRES WEEP,");
             await print("FOR SECRETS THAT THE SERVERS KEEP.");
             await print("");
-        } else if (cmd === "") {
-            await print("");
-        } else if (cmd === "") {
-            await print("");
-        } else if (cmd === "") {
-            await print("");
-        } else if (cmd === "") {
-            await print("");
-        } else if (cmd === "") {
-            await print("");
-        } else if (cmd === "") {
-            await print("");
-        } else if (cmd === "") {
-            await print("");
         } else {
             await print("UNKNOWN COMMAND");
             await print("");
         }
-        boot();
     }
+
+    input.addEventListener("keydown", function(e) {
+        if (e.key === "Enter") {
+            let cmd = input.value.toLowerCase().trim();
+            print("> " + cmd);
+            runCommand(cmd);
+            input.value = "";
+        }
+    });
+
+    boot();
+})();
