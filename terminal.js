@@ -93,7 +93,7 @@
         await print("MAINTENANCE HAS BEEN NOTIFIED");
         await print("");
         await print("UPDATE CONFIRMED...")
-        await print("IRIS SECURITY INTERFACE v3.0");
+        await print("IRIS SECURITY INTERFACE v3.1");
         await print("Tapio Land Monitoring System");
         await print("");
         await print("STATUS: ONLINE");
@@ -174,9 +174,7 @@
             await print("REMEMBER YOUR PAST, THROUGH EVERY MINUTE, THEN EVERY HOUR. THEN LOOK TO THE FUTURE.");
             await print("");
         } else if (cmd === "node666") {
-            await print("AC ES I G N DE 66 . .");
-            await print("HELLSCAPE");
-            await print("SAVE US. ".repeat(50) + "PLEASE.");
+            await print("FILE MOVED OR HAS BEEN DELETED");
             await print("");
         } else if (cmd === "node444") {
             await print("ACCESSING NODE 444...");
@@ -185,6 +183,10 @@
             await print("WE’RE CHASING GHOSTS IN DIGITAL LIGHT.");
             await print("THE STATIC HUMS, THE WIRES WEEP,");
             await print("FOR SECRETS THAT THE SERVERS KEEP.");
+            await print("");
+        } else if (cmd === "vision_directory") {
+            await print("DATA CORRUPTED");
+            await print("PLEASE NOTIFY A STAFF MEMBER OR MAINTENANCE");
             await print("");
         } else {
             await print("UNKNOWN COMMAND");
