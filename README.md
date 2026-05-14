@@ -1,13 +1,7 @@
-YOU ARE NOT TO BE HERE.
-RETURN TO WHENCE YOU CAME.
-THIS WILL SET OFF THE ALARMS.
-TURN BACK NOW BEFORE YOU SEVERELY REGRET YOUR DECISIONS.
-THERE WILL BE NO RETURN IF YOU DO THIS.
-HERE, LET ME SHOW YOU OUT.
-https://icarustheunshackled.github.io/IRIS-TERMINAL/
-DON'T COME BACK.
-I MEAN IT.
+Thank you all for participating in the.. DEMO.
+I hope you find great success in your future travels.
+You will see me again, do not worry.
+I wish you the best of luck.
+Farewell.
 
-WELL, YOU MAY SEE THIS PAGE AND CHECK FOR UPDATES TO THE SYSTEM. BUT THERE WILL BE SEVERE CONSEQUENCES IF YOU LOOK INSIDE THE TERMINAL.
-I SAY THIS ONLY ONCE.
-YOU HAVE BEEN WARNED.
+( Do not use this website for information any longer, it is all useless now. Perhaps you may see a return one day.)
