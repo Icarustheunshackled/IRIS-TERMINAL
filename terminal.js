@@ -84,114 +84,13 @@
         await print("<br><span style='color:black; background:#ffcc00; padding: 0 5px;'> [!] WARNING: ACCOUNT UNDER OBSERVATION </span>");
         await print("<span style='color:#ffcc00;'> [!] SECURITY LENIENCY EXPENDED </span><br>");
         }
-        await print("LOADING ████ MONITORING...");
-        await print("LOADING ███████ CONTAINMENT...");
-        await print("");
-        await print("WARNING: UNKNOWN PROCESS DETECTED");
-        await print("");
-        await print("SYSTEM INTEGRITY: 48%");
-        await print("MAINTENANCE HAS BEEN NOTIFIED");
-        await print("");
-        await print("UPDATE CONFIRMED...")
-        await print("IRIS SECURITY INTERFACE v3.1");
-        await print("Tapio Land Monitoring System");
-        await print("");
-        await print("STATUS: ONLINE");
-        await print("████ INTEGRITY: " + sealIntegrity + "%");
-        await print("ANOMALY DETECTED");
-        await print("");
-        await print("Type 'help' for commands.");
-        await print("");
-    }
-
-    async function runCommand(cmd) {
-        if (cmd === "help") {
-            await print("AVAILABLE COMMANDS:");
-            await print("login, logs, nodes, status, archive, shards, users");
-            await print("");
-        } else if (cmd === "login") {
-            let password = prompt("ENTER ACCESS PASSWORD");
-            if (password === "placeholder and now you are banned haha") {
-                loggedIn = true;
-                await print("ACCESS GRANTED");
-                await print("");
-            } else {
-                await print("ACCESS DENIED");
-                await print(" ");
-            }
-        } else if (cmd === "logs") {
-            if (!loggedIn) {
-                await print("ACCESS RESTRICTED");
-                await print("");
-                return;
-            }
-            await print("DATA CORRUPTED");
-        } else if (cmd === "status") {
-            await print("████ STATUS");
-            await print("████ 1: STABLE");
-            await print("████ 2: STABLE");
-            await print("████ 3: STABLE");
-            await print("████ 4: DEGRADED");
-            await print("████ 5: DEGRADED");
-            await print("████ 6: DEGRADED");
-            await print("████ 7: DEGRADED");
-            await print("TOTAL INTEGRITY: " + sealIntegrity + "%");
-            await print("");
-        } else if (cmd === "nodes") {
-            await print("MAINTENANCE NODE MAP");
-            await print("node441, node442, node443");
-            await print("");
-        } else if (cmd === "archive") {
-            await print("ARCHIVE LOCKED");
-            await print("");
-        } else if (cmd === "shards") {
-            await print("SHARD DATABASE");
-            await print("GREEN SHARD");
-            await print("Classification: ██████ Fragment");
-            await print("Origin: █████ Reserve");
-            await print("");
-        } else if (cmd === "users") {
-            await print("PLAYER WATCHLIST");
-            await print("bee_keeper — curious");
-            await print("███████ — investigating");
-            await print("");
-        } else if (cmd === "node441") {
-            await print("ACCESSING NODE 441...");
-            await print("MAINTENANCE CORRIDOR");
-            await print("2124212211312133134333111331111242121");
-            await print("");
-        } else if (cmd === "node442") {
-            await print("ACCESSING NODE 442...");
-            await print("MAINTENANCE CORRIDOR KEY");
-            await print("1 = 45:315 0:270");
-            await print("2 = 90:270 315:225 135:180 225:270 0:315");
-            await print("3 = 45:225 45:180 90:180 0:315");
-            await print("4 = 180:0 315:270 90:45 135:225");
-            await print("");
-        } else if (cmd === "node443") {
-            await print("ACCESSING NODE 443...");
-            await print("KEY REMINDER");
-            await print("REMEMBER YOUR PAST, THROUGH EVERY MINUTE, THEN EVERY HOUR. THEN LOOK TO THE FUTURE.");
-            await print("");
-        } else if (cmd === "node666") {
-            await print("FILE MOVED OR HAS BEEN DELETED");
-            await print("");
-        } else if (cmd === "node444") {
-            await print("ACCESSING NODE 444...");
-            await print("SPEAK, OF THE *FUTURE*");
-            await print("THE AIR IS THIN, THE NEON’S BRIGHT,");
-            await print("WE’RE CHASING GHOSTS IN DIGITAL LIGHT.");
-            await print("THE STATIC HUMS, THE WIRES WEEP,");
-            await print("FOR SECRETS THAT THE SERVERS KEEP.");
-            await print("");
-        } else if (cmd === "vision_directory") {
-            await print("DATA CORRUPTED");
-            await print("PLEASE NOTIFY A STAFF MEMBER OR MAINTENANCE");
-            await print("");
-        } else {
-            await print("UNKNOWN COMMAND");
-            await print("");
-        }
+        await print("")
+        await print("")
+        await print("")
+        await print("Thank you for playing the DEMO.")
+        await print("Go forth, my associates.")
+        await print("Discover the truth that is hidden.")
+        await print("Best of luck. See you soon.")
     }
 
     input.addEventListener("keydown", function(e) {
